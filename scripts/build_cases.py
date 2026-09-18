@@ -26,7 +26,7 @@ import os
 ZJ_BASE = '/Users/yan/Desktop/for_claude/workspace/zj-csrc-data'
 OUT_BASE = '/Users/yan/Desktop/for_claude/workspace/cn-law-hub/docs/data'
 
-BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局']
+BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局']
 DATA_DIRS = {
     '浙江证监局': 'zj_csrc_data',
     '北京证监局': 'bj_csrc_data',
@@ -37,6 +37,7 @@ DATA_DIRS = {
     '福建证监局': 'fujian_csrc_data',
     '四川证监局': 'sichuan_csrc_data',
     '山东证监局': 'shandong_csrc_data',
+    '湖北证监局': 'hubei_csrc_data',
 }
 
 # ============ 二级分类体系（6 一级 × 26 二级）============
