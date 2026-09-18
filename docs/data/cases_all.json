@@ -1,5 +1,25 @@
 [
   {
+    "party": "广东君溢私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-09-17",
+    "case_no": "2026〔2026〕116号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东君溢私募基金管理有限公司采取责令改正措施的决定〔2026〕116号.doc",
+    "content_text": "关于对广东君溢私募基金管理有限公司采取责令改正措施的决定〔2026〕116号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7659379/content.shtml"
+  },
+  {
     "party": "木石（北京）投资管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -166,6 +186,26 @@
     "content_text": "深圳前海恒邦股权投资有限公司\n：\n经查，你公司在从事私募基金业务活动中，\n存在以下行为：委托不具有销售资质的\n单位及\n人员从事资金募集活动、\n未审慎审核部分投资者是否符合私募基金合格投资者标准\n、不公平对待同一私募基金的不同投资者、未按基金合同约定对基金财产进行托管、从事与私募基金管理相冲突的业务，\n说明公司未\n充分\n履行谨慎勤勉义务\n。\n相关行为\n违反\n了\n《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《私募管理办法》）第四条第一款及《关于加强私募投资基金监管的若干规定》（证监会公告〔2020〕71号）第四条、第六条第一款第八项、第九条第一款第五项、第九条第一款第八项的相关规定。依据《私募管理办法》第三十三条的规定，我局决定对你公司采取责令改正的行政监管措施。\n你公司应当提高规范运作意识，加强合规风险管理，针对上述违规情形深入认真开展整改。你公司应当在本行政监管措施送达之日起60个工作日内完成整改，并向我局提交整改报告。如你单位逾期未改正，我局将依据《私募\n投资基金监督管理\n条例》第四十二条的规定采取进一步措施。\n如对本行政监管措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请（行政复议申请可以通过邮政快递寄送至中国证券监督管理委员会法治司），也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n2026年8月27日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7656764/content.shtml"
+  },
+  {
+    "party": "珠海中朴私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-08-27",
+    "case_no": "2026〔2026〕108号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海中朴私募基金管理有限公司采取出具警示函措施的决定〔2026〕108号.docx",
+    "content_text": "关于对珠海中朴私募基金管理有限公司采取出具警示函措施的决定〔2026〕108号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7654837/content.shtml"
   },
   {
     "party": "梁慧荣",
@@ -2603,6 +2643,26 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7647448/content.shtml"
   },
   {
+    "party": "珠海横琴晖鸿创富私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-07-20",
+    "case_no": "2026〔2026〕99号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海横琴晖鸿创富私募基金管理有限公司采取出具警示函措施的决定〔2026〕99号.docx",
+    "content_text": "关于对珠海横琴晖鸿创富私募基金管理有限公司采取出具警示函措施的决定〔2026〕99号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7646300/content.shtml"
+  },
+  {
     "party": "珠海通沛股权投资管理合伙企业（有限合伙）",
     "party_type": "机构",
     "agency": "中国证券投资基金业协会（中基协）",
@@ -3699,6 +3759,66 @@
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103899/c7642220/content.shtml"
   },
   {
+    "party": "温润（珠海）私募基金管理合伙企业（有限合伙）",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-06-29",
+    "case_no": "2026〔2026〕78号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对温润（珠海）私募基金管理合伙企业（有限合伙）采取责令改正措施的决定〔2026〕78号.doc",
+    "content_text": "关于对温润（珠海）私募基金管理合伙企业（有限合伙）采取责令改正措施的决定〔2026〕78号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7641935/content.shtml"
+  },
+  {
+    "party": "广州立丰私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-06-29",
+    "case_no": "2026〔2026〕77号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州立丰私募基金管理有限公司采取责令改正措施的决定〔2026〕77号.doc",
+    "content_text": "关于对广州立丰私募基金管理有限公司采取责令改正措施的决定〔2026〕77号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7641933/content.shtml"
+  },
+  {
+    "party": "广东华大创业投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-06-29",
+    "case_no": "2026〔2026〕76号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东华大创业投资基金管理有限公司采取责令改正措施的决定〔2026〕76号.doc",
+    "content_text": "关于对广东华大创业投资基金管理有限公司采取责令改正措施的决定〔2026〕76号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7641931/content.shtml"
+  },
+  {
     "party": "浙商财富（北京）投资基金管理有限公司",
     "party_type": "机构",
     "agency": "中国证券投资基金业协会（中基协）",
@@ -4480,6 +4600,26 @@
     "content_text": "富德股权投资基金管理（深圳）有限公司：\n经查，富德股权投资基金管理（深圳）有限公司\n在从事私募基金业务活动中\n，存在未独立开展投资决策及投后管理、未对投资标的进行现场尽职调查，未能发现投资标的注册地址无人办公情形，说明公司在管理、运用私募基金财产过程中未履行谨慎勤勉义务。上述相关行为违反了\n《私募投资基金监督管理暂行办法》\n（证监会令第105号\n,\n以下简称《私募管理办法》）\n第\n四\n条\n第一款\n的规定。依据《私募管理办法》第三十三条的规定，我局决定对富德股权投资基金管理（深圳）有限公司采取出具警示函的行政监管措施。\n如对本行政监管措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请（行政复议申请可以通过邮政快递寄送至中国证券监督管理委员会法治司），也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n2026年6月17日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7645043/content.shtml"
+  },
+  {
+    "party": "吉富创业投资股份有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-06-17",
+    "case_no": "2026〔2026〕74号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对吉富创业投资股份有限公司采取责令改正措施的决定〔2026〕74号.docx",
+    "content_text": "关于对吉富创业投资股份有限公司采取责令改正措施的决定〔2026〕74号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7639717/content.shtml"
   },
   {
     "party": "刘昊林",
@@ -7394,6 +7534,26 @@
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103952/c7628152/content.shtml"
   },
   {
+    "party": "广东康利私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-04-23",
+    "case_no": "2026〔2026〕53号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东康利私募基金管理有限公司采取责令改正措施的决定〔2026〕53号",
+    "content_text": "关于对广东康利私募基金管理有限公司采取责令改正措施的决定〔2026〕53号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104549/c7627929/content.shtml"
+  },
+  {
     "party": "庄成",
     "party_type": "自然人",
     "position": "",
@@ -7749,6 +7909,26 @@
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103952/c7627989/content.shtml"
   },
   {
+    "party": "广东天虹资本私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-04-17",
+    "case_no": "2026〔2026〕49号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东天虹资本私募基金管理有限公司采取责令改正措施的决定〔2026〕49号.docx",
+    "content_text": "关于对广东天虹资本私募基金管理有限公司采取责令改正措施的决定〔2026〕49号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7626764/content.shtml"
+  },
+  {
     "party": "杭州富毓投资有限公司",
     "party_type": "机构",
     "position": "",
@@ -7852,6 +8032,26 @@
     "content_text": "关于对中财金控投资有限公司采取出具警示函行政监管措施的决定\n\n中财金控投资有限公司:\n经查,你公司存在以下情况:一、管理、运用私募基金财产,未能恪尽职守地履行诚实信用、谨慎勤勉的义务。\n\n二、未对投资者的风险识别能力和风险承担能力进行评估。\n\n上述行为违反了《私募投资基金监督管理暂行办法》(证监会令第105号,以下简称《暂行办法》)第四条第一款、第十六条第一款之规定。\n\n依据《暂行办法》第三十三条之规定,我局决定对你公司采取出具警示函的行政监管措施。\n\n你公司应进一步提高合规经营意识和能力,恪尽职守履行私募基金管理人职责,切实维护投资者合法权益。\n\n如果对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起六个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间,上述监督管理措施不停止执行。\n\n中国证监会北京监管局2026年4月17日",
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7626545/content.shtml"
+  },
+  {
+    "party": "恒正嘉华（广东）私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-04-14",
+    "case_no": "2026〔2026〕44号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对恒正嘉华（广东）私募基金管理有限公司采取责令改正措施的决定〔2026〕44号.docx",
+    "content_text": "关于对恒正嘉华（广东）私募基金管理有限公司采取责令改正措施的决定〔2026〕44号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7626213/content.shtml"
   },
   {
     "party": "深圳常春藤私募证券基金管理有限公司",
@@ -9528,6 +9728,26 @@
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7643551/content.shtml"
   },
   {
+    "party": "广东嘉强私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-03-19",
+    "case_no": "2026〔2026〕40号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东嘉强私募基金管理有限公司采取出具警示函措施的决定〔2026〕40号.doc",
+    "content_text": "关于对广东嘉强私募基金管理有限公司采取出具警示函措施的决定〔2026〕40号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7620971/content.shtml"
+  },
+  {
     "party": "深圳市华禹国富股权投资基金管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -9787,6 +10007,66 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7621270/content.shtml"
   },
   {
+    "party": "广东中科科创创业投资管理有限责任公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-03-06",
+    "case_no": "2026〔2026〕34号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东中科科创创业投资管理有限责任公司采取责令改正措施的决定〔2026〕34号.docx",
+    "content_text": "关于对广东中科科创创业投资管理有限责任公司采取责令改正措施的决定〔2026〕34号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7618538/content.shtml"
+  },
+  {
+    "party": "广东暴龙私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-03-06",
+    "case_no": "2026〔2026〕31号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东暴龙私募基金管理有限公司采取出具警示函措施的决定〔2026〕31号.doc",
+    "content_text": "关于对广东暴龙私募基金管理有限公司采取出具警示函措施的决定〔2026〕31号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7618523/content.shtml"
+  },
+  {
+    "party": "广东广垦太证私募股权投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-03-06",
+    "case_no": "2026〔2026〕30号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东广垦太证私募股权投资基金管理有限公司采取出具警示函措施的决定〔2026〕30号.doc",
+    "content_text": "关于对广东广垦太证私募股权投资基金管理有限公司采取出具警示函措施的决定〔2026〕30号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7618517/content.shtml"
+  },
+  {
     "party": "君瀛投资管理（北京）有限公司",
     "party_type": "机构",
     "position": "",
@@ -9919,6 +10199,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7626169/content.shtml"
   },
   {
+    "party": "泽元私募证券投资基金管理（广东）有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-03-03",
+    "case_no": "2026〔2026〕29号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对泽元私募证券投资基金管理（广东）有限公司采取责令改正措施的决定〔2026〕29号.docx",
+    "content_text": "关于对泽元私募证券投资基金管理（广东）有限公司采取责令改正措施的决定〔2026〕29号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7617708/content.shtml"
+  },
+  {
     "party": "浙商证券股份有限公司",
     "party_type": "机构",
     "position": "",
@@ -10015,6 +10315,26 @@
     "content_text": "广发证券股份有限公司苏州苏州大道东证券营业部:\n经查,你营业部对从业人员职业行为规范监督不到位,营业部部分不具有期货从业资格的人员从事期货IB业务并领取奖励,营业部负责人在晨会中公开发表不当言论,对基金销售实施短期激励等。\n上述情形违反了《证券公司和证券投资基金管理公司合规管理办法》(证监会令第166号)第十条第一款、《证券公司为期货公司提供中间介绍业务试行办法》(证监会公告〔2022〕43号)第十六条第二款、《证券公司为期货公司提供中间介绍业务试行办法》(证监发〔2025〕5号)第十六条第二款的规定,以及《公开募集证券投资基金销售机构监督管理办法》(证监会第175号令)第三十条第一款的规定。\n根据《证券公司和证券投资基金管理公司合规管理办法》第三十二条、《证券公司为期货公司提供中间介绍业务试行办法》第三十条以及《公开募集证券投资基金销售机构监督管理办法》第五十三条的规定,我局决定对你营业部采取出具警示函的行政监管措施。你营业部应加强合规内控管理,并在收到本决定书之日起30日内向我局书面报告整改情况。\n如果对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2026年2月28日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103892/c7618385/content.shtml"
+  },
+  {
+    "party": "广州市原象私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-02-28",
+    "case_no": "2026〔2026〕24号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州市原象私募基金管理有限公司采取出具警示函措施的决定〔2026〕24号",
+    "content_text": "关于对广州市原象私募基金管理有限公司采取出具警示函措施的决定〔2026〕24号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7617087/content.shtml"
   },
   {
     "party": "上海元亨王道私募基金管理有限公司",
@@ -13547,6 +13867,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7635782/content.shtml"
   },
   {
+    "party": "凯利集成（广东）私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2026-01-08",
+    "case_no": "2025〔2025〕173号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对凯利集成（广东）私募基金管理有限公司采取责令改正措施的决定〔2025〕173号.doc",
+    "content_text": "关于对凯利集成（广东）私募基金管理有限公司采取责令改正措施的决定〔2025〕173号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7608800/content.shtml"
+  },
+  {
     "party": "上海智钱投资管理合伙企业（有限合伙）",
     "party_type": "机构",
     "position": "",
@@ -15836,6 +16176,26 @@
     "content_text": "无锡清源华芯私募基金管理有限公司:\n我局在举报事项核查中发现,你公司存在以下情形:\n一是存在管理未备案私募基金的行为,违反了《私募投资基金监督管理暂行办法》(证监会令105号,简称《暂行办法》)第八条规定。\n二是未及时填报并定期更新管理人及其从业人员的有关信息,违反了《暂行办法》第二十五条规定。\n根据《暂行办法》第三十三条有关规定,我局决定对你公司采取出具警示函的行政监管措施。你公司应高度重视,充分吸取教训,加强合规管理,并于收到该决定书30日内向我局提交落实情况说明。\n如对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2025年12月17日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7603104/content.shtml"
+  },
+  {
+    "party": "广东久科私募股权投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-12-17",
+    "case_no": "2025〔2025〕151号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东久科私募股权投资基金管理有限公司采取责令改正措施的决定〔2025〕151号",
+    "content_text": "关于对广东久科私募股权投资基金管理有限公司采取责令改正措施的决定〔2025〕151号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7603095/content.shtml"
   },
   {
     "party": "深圳高申资产管理有限公司、刘文广",
@@ -19796,6 +20156,26 @@
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103952/c7591668/content.shtml"
   },
   {
+    "party": "珠海市聚隆私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-10-20",
+    "case_no": "2025〔2025〕110号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海市聚隆私募基金管理有限公司采取责令改正措施的决定〔2025〕110号.pdf",
+    "content_text": "关于对珠海市聚隆私募基金管理有限公司采取责令改正措施的决定〔2025〕110号.pdf",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7589879/content.shtml"
+  },
+  {
     "party": "四川东方添富股权投资基金管理有限公司",
     "party_type": "机构",
     "agency": "中国证券投资基金业协会（中基协）",
@@ -20544,6 +20924,26 @@
     "source_url": "https://www.amac.org.cn/zlgl/jlcf/scfjg/202509/P020250926610375108134.pdf"
   },
   {
+    "party": "广州德同私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-09-26",
+    "case_no": "2025〔2025〕98号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州德同私募基金管理有限公司采取责令改正措施的决定〔2025〕98号.docx",
+    "content_text": "关于对广州德同私募基金管理有限公司采取责令改正措施的决定〔2025〕98号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7585703/content.shtml"
+  },
+  {
     "party": "上海汇势通投资管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -20605,6 +21005,26 @@
     "content_text": "南京谨孚私募基金管理合伙企业(有限合伙):\n根据《私募投资基金监督管理暂行办法》(证监会令第105号,以下简称《暂行办法》)等有关规定,我局对你合伙企业私募基金业务进行了现场检查。经查,你合伙企业存在以下情形:\n一、从事与私募基金管理相冲突或者无关的业务,向其他公司提供借款,违反了《关于加强私募投资基金监管的若干规定》(证监会公告〔2020〕71号,以下简称《若干规定》)第四条及《暂行办法》第二十三条规定。\n二、未按合同约定向投资者披露季度报告,违反了《暂行办法》第二十四条规定。\n根据《暂行办法》第三十三条和《若干规定》第十三条的规定,我局决定对你合伙企业采取出具警示函的行政监管措施。你合伙企业应高度重视,充分吸取教训,加强合规管理,并于收到该决定书30日内向我局提交落实情况说明。\n如对本监督管理措施不服,可以在收到本决定之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2025年9月23日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7585530/content.shtml"
+  },
+  {
+    "party": "珠海悦鸿图私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-09-22",
+    "case_no": "2025〔2025〕101号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海悦鸿图私募基金管理有限公司采取出具警示函措施的决定〔2025〕101号.docx",
+    "content_text": "关于对珠海悦鸿图私募基金管理有限公司采取出具警示函措施的决定〔2025〕101号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7584733/content.shtml"
   },
   {
     "party": "上海昌懋投资管理有限公司",
@@ -20712,6 +21132,26 @@
     "content_text": "深圳市华腾资本投资中心（有限合伙）\n：\n经查\n，\n深圳市华腾资本投资中心（有限合伙）\n在从事私募基金业务活动中，存在\n以下情形：一是\n未采取问卷调查等方式对部分投资者的风险识别能力和风险承担能力进行评估\n;\n二是向风险识别能力和风险承担能力与基金产品风险等级不匹配的投资者推介私募基金\n;\n三是未妥善保存部分私募基金投资者适当性管理\n方面的\n材料。\n相关行为\n违反了\n《私募投资基金监督管理暂行办法》\n（\n证监会令第105号\n，以下简称《私募管理办法》）\n第\n十六条第一款、第十七条、第二十六条\n的相关规定\n。\n依据\n《私募管理办法》第三十三条\n的规定，\n我局决定对\n深圳市华腾资本投资中心（有限合伙）\n采取\n出具警示函\n的行政监管措施。\n如对本行政监管措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请（行政复议申请可以通过邮政快递寄送至中国证券监督管理委员会法治司），也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n2025年9月19日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7590886/content.shtml"
+  },
+  {
+    "party": "广东展麟私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-09-19",
+    "case_no": "2025〔2025〕96号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东展麟私募基金管理有限公司采取责令改正措施的决定〔2025〕96 号.pdf",
+    "content_text": "关于对广东展麟私募基金管理有限公司采取责令改正措施的决定〔2025〕96 号.pdf",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7584174/content.shtml"
   },
   {
     "party": "深圳市福晟资本有限公司、潘浩然",
@@ -20967,6 +21407,26 @@
     "content_text": "上海洹涛投资管理有限公司、吴锦明：\n经查，上海洹涛投资管理有限公司（统一社会信用代码：91310117572719299L，以下简称上海洹涛或公司)在开展私募基金业务过程中存在以下事实：一是未充分履行谨慎勤勉义务，违反了《私募投资基金监督管理暂行办法》（证监会令第105号）第四条第一款的规定。\n\n二是未按规定向中国证券投资基金业协会更新所管理基金的有关信息，违反了《私募投资基金监督管理暂行办法》第二十五条第一款的规定。\n\n吴锦明作为公司法定代表人、执行董事兼总经理，在履职过程中，未恪守职业道德和行为规范，对公司违规行为负有责任，违反了《私募投资基金监督管理暂行办法》第四条第二款的规定。\n\n根据《私募投资基金监督管理暂行办法》第三十三条的规定，现决定对上海洹涛、吴锦明采取出具警示函的监督管理措施。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2025年9月12日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7585286/content.shtml"
+  },
+  {
+    "party": "广州崇楷私募基金管理合伙企业（有限合伙）",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-09-12",
+    "case_no": "2025〔2025〕89号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州崇楷私募基金管理合伙企业 （有限合伙）采取责令改正措施的决定〔2025〕89号.pdf",
+    "content_text": "关于对广州崇楷私募基金管理合伙企业 （有限合伙）采取责令改正措施的决定〔2025〕89号.pdf",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7582914/content.shtml"
   },
   {
     "party": "苏州和达私募基金管理合伙企业（有限合伙）",
@@ -21834,6 +22294,26 @@
     "content_text": "无锡瀚泽资产管理有限公司:\n根据《私募投资基金监督管理暂行办法》(证监会令第105号,以下简称《暂行办法》)相关规定,我局对你公司私募基金业务进行了检查。你公司私募基金管理人登记编号为P1006653,2022年6月公司注册地址由江苏省无锡市变更为北京市,名称变更为北京瀚泽私募基金管理有限公司。经查,我局发现你公司存在以下行为:\n一是在管理私募基金产品过程中,未履行谨慎勤勉义务,违反了《暂行办法》第四条第一款规定。\n二是未根据基金业协会的规定,及时填报并更新管理及其从业人员的有关信息,以及发生重大事项后,未在10个工作日内向基金业协会报告,违反了《暂行办法》第二十五条第一款规定。\n根据《暂行办法》第三十三条规定,我局决定对你公司采取出具警示函的行政监管措施。你公司应高度重视,充分吸取教训,加强合规管理,并于收到该决定30日内向我局提交落实情况说明。\n如对本监督管理措施不服,可以在收到本决定之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2025年8月15日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7612635/content.shtml"
+  },
+  {
+    "party": "珠海市海泽证券投资私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-08-14",
+    "case_no": "2025〔2025〕83号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海市海泽证券投资私募基金管理有限公司采取出具警示函措施的决定〔2025〕83号.docx",
+    "content_text": "关于对珠海市海泽证券投资私募基金管理有限公司采取出具警示函措施的决定〔2025〕83号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7577231/content.shtml"
   },
   {
     "party": "鼎泰四方（深圳）私募证券基金管理有限公司、姚益民、陈勇豹",
@@ -22985,6 +23465,26 @@
     "content_text": "深圳赛亚资本管理有限公司\n：\n经查，\n深圳赛亚资本管理有限公司\n在从事私募基金业务活动中，\n存在募集私募证券基金时未\n与投资者签订基金合同\n的情形\n。\n相关行为违反了\n《私募投资基金监督管理暂行办法》\n（\n证监会令第105号\n，以下简称《私募管理办法》）\n第二十条第一款的相关规定。依据\n《私募管理办法》\n第三十三条的规定，我局决定对深圳赛亚资本管理有限公司采取出具警示函的行政监管措施。\n如对本行政监管措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请（行政复议申请可以通过邮政快递寄送至中国证券监督管理委员会法治司），也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n202\n5\n年\n6\n月\n24\n日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7571324/content.shtml"
+  },
+  {
+    "party": "广州百利新私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-07-08",
+    "case_no": "2025〔2025〕65号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州百利新私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕65号.docx",
+    "content_text": "关于对广州百利新私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕65号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7569760/content.shtml"
   },
   {
     "party": "嘉兴菲南斯投资管理有限公司",
@@ -24182,6 +24682,26 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7561525/content.shtml"
   },
   {
+    "party": "广州市瀚晖创业投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-05-30",
+    "case_no": "2025〔2025〕62号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州市瀚晖创业投资管理有限公司采取责令改正措施的决定〔2025〕62号.docx",
+    "content_text": "关于对广州市瀚晖创业投资管理有限公司采取责令改正措施的决定〔2025〕62号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7561515/content.shtml"
+  },
+  {
     "party": "天问时代私募基金管理（海南）有限公司",
     "party_type": "机构",
     "agency": "中国证券投资基金业协会（中基协）",
@@ -24836,6 +25356,26 @@
     "content_text": "上海盎泽私募基金管理有限公司、曾令郢：\n经查，上海盎泽私募基金管理有限公司（统一社会信用代码：91310115342105291X,以下简称上海盎泽或公司）在开展私募基金业务中，存在以下事实：上海盎泽在管理、运用私募基金财产过程中，未履行诚实守信、谨慎勤勉义务，违反了《私募投资基金监督管理条例》（国务院令第762号，以下简称《私募条例》）第三条第三款的规定。\n\n曾令郢作为私募基金从业人员，未恪守职业道德和行为规范，违反了《私募条例》第三条第四款的规定。\n\n根据《私募条例》第四十条第二款的规定，为防范私募基金风险，维护市场秩序，我局决定对上海盎泽、曾令郢采取出具警示函的监督管理措施。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2025年5月9日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7557122/content.shtml"
+  },
+  {
+    "party": "广东粤信至诚私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-05-07",
+    "case_no": "2025〔2025〕49号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东粤信至诚私募基金管理有限公司采取责令改正措施的决定〔2025〕49号.docx",
+    "content_text": "关于对广东粤信至诚私募基金管理有限公司采取责令改正措施的决定〔2025〕49号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7555889/content.shtml"
   },
   {
     "party": "徐俊",
@@ -26256,6 +26796,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7554399/content.shtml"
   },
   {
+    "party": "广东昆辰私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-04-02",
+    "case_no": "2025〔2025〕29号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东昆辰私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕29号.doc",
+    "content_text": "关于对广东昆辰私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕29号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7548516/content.shtml"
+  },
+  {
     "party": "深圳前海中易资产管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -27145,6 +27705,26 @@
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7542162/content.shtml"
   },
   {
+    "party": "广州凯瑞私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-02-17",
+    "case_no": "2025〔2025〕18号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州凯瑞私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕18号.docx",
+    "content_text": "关于对广州凯瑞私募证券投资基金管理有限公司采取责令改正措施的决定〔2025〕18号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7539327/content.shtml"
+  },
+  {
     "party": "东水天盈私募基金管理（湖北）有限公司",
     "party_type": "机构",
     "agency": "中国证券投资基金业协会（中基协）",
@@ -27367,6 +27947,26 @@
     "content_text": "中国建设银行股份有限公司镇江分行:\n经查,你行个别员工于2008年在客户不知情的情况下私自为客户开立基金账户并使用该基金账户进行基金交易。你行对上述情形未尽到检查和监督职责,违反了《证券投资基金销售管理办法》(中国证券监督管理委员会令第20号)第三十五条的规定。\n依据《证券投资基金销售管理办法》(中国证券监督管理委员会令第20号)第五十二条,我局决定对你行采取责令改正的行政监督管理措施。你行应对上述问题进行整改,并于收到本决定之日起30天内向我局提交书面整改报告,我局将视情况进行检查验收。\n如果对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2025年2月13日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103892/c7539663/content.shtml"
+  },
+  {
+    "party": "广东弈鸣私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2025-02-13",
+    "case_no": "2025〔2025〕19号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东弈鸣私募基金管理有限公司采取责令改正措施的决定〔2025〕19号.docx",
+    "content_text": "关于对广东弈鸣私募基金管理有限公司采取责令改正措施的决定〔2025〕19号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7538652/content.shtml"
   },
   {
     "party": "北京枫瑞私募基金管理有限公司",
@@ -29972,6 +30572,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7527855/content.shtml"
   },
   {
+    "party": "珠海水木博雅私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-12-26",
+    "case_no": "2024〔2024〕216号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海水木博雅私募基金管理有限公司采取出具警示函措施的决定〔2024〕216号.docx",
+    "content_text": "关于对珠海水木博雅私募基金管理有限公司采取出具警示函措施的决定〔2024〕216号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7527827/content.shtml"
+  },
+  {
     "party": "浙商证券股份有限公司",
     "party_type": "机构",
     "position": "",
@@ -30169,6 +30789,26 @@
     "content_text": "华金证券股份有限公司：\n经查，你公司在业务开展过程中存在以下行为：一是私募资产管理业务投资管理不规范，个别单一资产管理计划主动管理不足，违反了《证券期货经营机构私募资产管理业务管理办法》（证监会令第151号，经证监会令第203号修订，以下简称《私募资管业务办法》）第四十七条第三项的规定。\n\n二是私募资产管理业务股票库管理制度执行不到位，违反了《私募资管业务办法》第五十九条第二款的规定。\n\n三是代销金融产品准入制度执行不到位，违反了《公开募集证券投资基金销售机构监督管理办法》（证监会令第175号，以下简称《基金销售机构管理办法》）第二十五条的规定。\n\n四是销售私募基金未审慎核验部分高龄投资者的收入证明，违反了《基金销售机构管理办法》第四十六条第一款的规定。\n\n根据《私募资管业务办法》第七十八条及《基金销售机构管理办法》第五十三条的规定，我局决定对你公司采取责令改正的行政监管措施。\n\n你公司应高度重视，采取有效措施加强整改，并于收到本决定书之日起30日内向我局提交书面整改报告。\n\n如果对本行政监管措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述行政监管措施不停止执行。\n\n中国证券监督管理委员会上海监管局2024年12月20日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7526328/content.shtml"
+  },
+  {
+    "party": "广东粤骏私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-12-20",
+    "case_no": "2024〔2024〕211号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东粤骏私募证券投资基金管理有限公司采取出具警示函措施的决定〔2024〕211号.docx",
+    "content_text": "关于对广东粤骏私募证券投资基金管理有限公司采取出具警示函措施的决定〔2024〕211号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7526050/content.shtml"
   },
   {
     "party": "华映资本管理有限公司",
@@ -31743,6 +32383,26 @@
     "source_url": "https://www.amac.org.cn/zlgl/jlcf/scfjg/202411/P020241108608722152528.pdf"
   },
   {
+    "party": "广东诚鸿私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-11-08",
+    "case_no": "2024〔2024〕183号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东诚鸿私募基金管理有限公司采取出具警示函措施的决定〔2024〕183号.docx",
+    "content_text": "关于对广东诚鸿私募基金管理有限公司采取出具警示函措施的决定〔2024〕183号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7517534/content.shtml"
+  },
+  {
     "party": "江苏华商城市配送网络股份有限公司、戎君、尤燕华",
     "party_type": "机构",
     "position": "",
@@ -32429,6 +33089,26 @@
     "content_text": "苏州元联投资基金管理有限公司:\n根据《私募投资基金监督管理暂行办法》(证监会令第105号,简称《暂行办法》),我局对你公司私募基金业务进行了现场检查。\n经查,你公司部分产品存在未按规定进行信息披露的问题,违反了《暂行办法》第二十四条规定。\n根据《暂行办法》第三十三条有关规定,我局决定对你公司采取出具警示函的行政监管措施。你公司应高度重视,充分吸取教训,加强合规管理,依法合规开展私募基金业务。\n如对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2024年10月21日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7516795/content.shtml"
+  },
+  {
+    "party": "中岩私募股权投资基金管理（广州）有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-10-21",
+    "case_no": "2024〔2024〕169号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对中岩私募股权投资基金管理（广州）有限公司采取出具警示函措施的决定〔2024〕169号.docx",
+    "content_text": "关于对中岩私募股权投资基金管理（广州）有限公司采取出具警示函措施的决定〔2024〕169号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7513495/content.shtml"
   },
   {
     "party": "明曦（杭州）私募基金管理有限公司",
@@ -33492,6 +34172,26 @@
     "content_text": "深圳市丹桂顺资产管理有限公司、张红英、王成林\n：\n经查，\n深圳市丹桂顺资产管理有限公司\n（以下简称\n丹桂顺\n或公司）\n在\n从事私募基金业务活动\n中\n，存在\n以下情\n形：\n一是未按照\n丹桂顺之实事求是伍号私募证券投资基金\n（以下简称\n实事求是伍号\n）的合同约定及时调整估值方法，\n不公平对待实事求是伍号的不同投资者，存在未充分履行谨慎勤勉义务\n的情形\n。\n二是\n向不合格投资者\n募集资金。\n三是向投资者承诺投资本金不受损失及承诺最低收益。\n上述\n情形违反了《私募投资基金监督管理暂行办法》（证监会令第105号\n，\n以下简称《私募\n管理\n办法》）\n第\n四\n条第一款、第十一条第一款、第十二条第一款\n、\n第十四条和\n第十五条\n的相关规定。\n2017年12月至今，张红英担任丹桂顺的法定代表人、执行董事、总经理，对上述\n第一项和第二项\n违规行为负有责任。\n2017年12月至今，王成林是丹桂顺的实际控制人，负责公司重大事项决策，对上述\n所有\n违规行为负有责任。\n依据《私募\n管理\n办法》第三十三条\n的\n规定\n，我局决定对\n丹桂顺及张红英、王成林\n采取出具警示函的行政监管措施。\n如对本行政监管措施不服，可在收到本决定书之日起60日内向中国证监会提出行政复议申请，也可在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n202\n3\n年\n7\n月\n1\n7\n日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7506342/content.shtml"
+  },
+  {
+    "party": "广东逸信私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-09-12",
+    "case_no": "2024〔2024〕141号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东逸信私募基金管理有限公司采取责令改正措施的决定〔2024〕141号.docx",
+    "content_text": "关于对广东逸信私募基金管理有限公司采取责令改正措施的决定〔2024〕141号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7506279/content.shtml"
   },
   {
     "party": "深圳市华睿信资产管理有限公司、范嘉贵",
@@ -34652,6 +35352,26 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7499523/content.shtml"
   },
   {
+    "party": "晋建私募基金管理（横琴）有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-08-05",
+    "case_no": "2024〔2024〕93号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对晋建私募基金管理（横琴）有限公司采取责令改正措施的决定〔2024〕93号.docx",
+    "content_text": "关于对晋建私募基金管理（横琴）有限公司采取责令改正措施的决定〔2024〕93号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7498330/content.shtml"
+  },
+  {
     "party": "北京盛唐恒泰国际投资管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -34685,6 +35405,26 @@
     "content_text": "关于对北京盛唐恒泰国际投资管理有限公司采取责令改正行政监管措施的决定\n\n〔2024〕207号北京盛唐恒泰国际投资管理有限公司:\n经查,我局发现你公司存在以下行为:一、管理的部分私募基金募集完毕后未依据中国证券投资基金业协会的规则办理基金备案手续。\n\n二、管理的部分私募基金向非合格投资者募集基金。\n\n三、挪用基金财产。\n\n上述行为违反了《私募投资基金监督管理暂行办法》(证监会令第105号,以下简称《暂行办法》)第八条、第十四条、第二十三条第四项之规定。\n\n依据《暂行办法》第三十三条之规定,我局决定对你公司采取责令改正的行政监管措施。\n\n你公司应进一步提高合规经营意识和能力,恪尽职守履行私募基金管理人职责,切实维护投资者合法权益。\n\n你公司应在收到本决定之日起30日内向我局提交书面整改报告,我局将择机对你公司的整改落实情况组织检查验收。\n\n如果对本监督管理措施不服,可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起六个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间,上述监督管理措施不停止执行。\n\n中国证监会北京监管局2024年8月1日",
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7497684/content.shtml"
+  },
+  {
+    "party": "珠海涵崧私募股权基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-08-02",
+    "case_no": "2024〔2024〕89号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海涵崧私募股权基金管理有限公司采取责令改正措施的决定〔2024〕89号.docx",
+    "content_text": "关于对珠海涵崧私募股权基金管理有限公司采取责令改正措施的决定〔2024〕89号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7497831/content.shtml"
   },
   {
     "party": "杭州嘉祺投资管理有限公司",
@@ -38081,6 +38821,26 @@
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7471030/content.shtml"
   },
   {
+    "party": "广州阿尔法喵私募基金管理中心（有限合伙）",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-03-25",
+    "case_no": "2024〔2024〕22号",
+    "penalty": "监管谈话",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州阿尔法喵私募基金管理中心（有限合伙）采取监管谈话措施的决定〔2024〕22号.wps",
+    "content_text": "关于对广州阿尔法喵私募基金管理中心（有限合伙）采取监管谈话措施的决定〔2024〕22号.wps",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7469554/content.shtml"
+  },
+  {
     "party": "上海理成资产管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -38678,6 +39438,46 @@
     "content_text": "深圳千峰私募证券投资基金管理有限公司\n、郭凯\n：\n经查，\n深圳千峰私募证券投资基金管理有限公司\n（以下简称\n千峰基金\n或公司）\n在\n从事私募基金业务活动\n中\n，存在\n以下问题：\n一是\n未履行谨慎勤勉义务\n,公司\n所管理的\n千峰成长1号私募证券投资基金及千峰2号私募证券投资基金实际负责投资运作的基金经理与基金合同约定不符。\n二是\n未\n履\n行\n信息披露义务，\n公司\n未按照\n上述基金产品\n合同约定向投资者\n提供与私募基金管理业务相关的可能影响投资者合法权益的重大信息\n。\n以上情形，违反了\n《\n私募投资基金监督管理条例\n》（\n国务院令第762号，以下简称《私募条例》\n）\n第三条第三款、第十一条第一款第（五）项及\n《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《私募管理办法》）第四条第一款、第二十四条的相关规定\n。\n郭凯自\n2018年7月至今\n任公司法定代表人、执行董事、总经理\n，对公司上述\n违规行为负有责任。\n依据\n《私募条例》第四十条第二款、\n《私募\n管理\n办法》第三十三条规定，我局决定对\n深圳千峰私募证券投资基金管理有限公司\n、郭凯\n采取出具警示函的行政监管措施。\n如对本行政监管措施不服，可在收到本决定书之日起60日内向中国证监会提出行政复议申请，也可在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n2024年2月7日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7462819/content.shtml"
+  },
+  {
+    "party": "珠海有容私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-02-07",
+    "case_no": "2024〔2024〕16号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海有容私募基金管理有限公司采取出具警示函措施的决定〔2024〕16号.docx",
+    "content_text": "关于对珠海有容私募基金管理有限公司采取出具警示函措施的决定〔2024〕16号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7462576/content.shtml"
+  },
+  {
+    "party": "广州国杰私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2024-02-07",
+    "case_no": "2024〔2024〕15号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州国杰私募基金管理有限公司采取出具警示函措施的决定〔2024〕15号.docx",
+    "content_text": "关于对广州国杰私募基金管理有限公司采取出具警示函措施的决定〔2024〕15号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7462567/content.shtml"
   },
   {
     "party": "浙江如山汇金私募基金管理有限公司",
@@ -40008,6 +40808,26 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7449026/content.shtml"
   },
   {
+    "party": "广州启恒私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2023-12-13",
+    "case_no": "2023〔2023〕166号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州启恒私募证券投资基金管理有限公司采取出具警示函措施的决定〔2023〕166号.docx",
+    "content_text": "关于对广州启恒私募证券投资基金管理有限公司采取出具警示函措施的决定〔2023〕166号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7448993/content.shtml"
+  },
+  {
     "party": "北京龙萨资本投资管理中心（有限合伙）",
     "party_type": "机构",
     "position": "",
@@ -41336,6 +42156,26 @@
     "content_text": "深圳市恒泰华盛资产管理有限公司：\n经查，你公司在从事私募基金业务活动中，存在\n以下违规行为：\n一\n是你公司募集的私募基金宁波梅山保税港区弘源互联投资合伙企业（有限合伙），未在中国证券投资基金业协会及时办理登记备案手续\n。\n二是你公司管理的私募基金华盛国海创赢6号基金\n、宁波梅山保税港区弘享汇赢投资合伙企业（有限合伙）\n，存在基金风险等级\n与部分\n投资者风险承受能力等级不匹配的情形。\n三是\n你公司管理的私募基金\n华盛国海创赢\n6号基金\n，\n未留存部分投资者适当性\n管理方面的\n相关\n资\n料\n。\n四是\n你公司\n未\n按\n恒泰华盛汇赢一号股权投资私募基金\n及\n恒泰华盛汇赢二号股权投资私募基金的\n基金合同约定\n向投资者披露可能存在的利益冲突情况。\n上述情形\n违反了\n《私募投资基金监督管理暂行办法》（证监会令第105号,以下简称《私募\n管理\n办法》）\n第八条第一款、\n第十七条、\n第二十四条、\n第二十六条的相关规定\n。依据《私募管理办法》第三十三条的规定，我局决定对你公司采取\n出具警示函\n的行政监管措施。\n如对本行政监管措施不服，你公司可在收到本决定书之日起6\n0\n日内向中国证监会提出行政复议申请，也可在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述行政监管措施不停止执行。\n深圳证监局\n202\n3\n年11月8日",
     "source": "深圳证监局",
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7443369/content.shtml"
+  },
+  {
+    "party": "广州汉马私募基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2023-11-10",
+    "case_no": "2023〔2023〕143号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州汉马私募基金管理有限公司采取出具警示函措施的决定（〔2023〕143号）.wps",
+    "content_text": "关于对广州汉马私募基金管理有限公司采取出具警示函措施的决定（〔2023〕143号）.wps",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7442398/content.shtml"
   },
   {
     "party": "上海钜澎资产管理有限公司",
@@ -45627,6 +46467,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c7397588/content.shtml"
   },
   {
+    "party": "广州拓融私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2023-03-24",
+    "case_no": "2023〔2023〕19号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州拓融私募证券投资基金管理有限公司采取出具警示函措施的决定〔2023〕19号.doc",
+    "content_text": "关于对广州拓融私募证券投资基金管理有限公司采取出具警示函措施的决定〔2023〕19号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7397573/content.shtml"
+  },
+  {
     "party": "浙江晖鸿投资管理有限公司",
     "party_type": "机构",
     "position": "",
@@ -45900,6 +46760,26 @@
     "content_text": "平安财富理财管理有限公司：\n经查，你公司(平安财富理财管理有限公司,统一社会信用代码：91310000570782446Y)在开展私募基金业务活动中，存在以下事实：一是未充分履行谨慎勤勉义务，未合理审慎地审查用于产品宣传的相关数据；\n\n二是未遵循专业化经营原则，从事与私募基金管理无关的业务，不符合《关于加强私募投资基金监管的若干规定》（证监会公告〔2020〕71号）第四条规定的要求；\n\n三是未按照基金合同约定向投资者披露关联交易等可能影响投资者合法权益的重大信息；\n\n四是未按规定及时向中国证券投资基金业协会报告更新管理人的有关信息、产品清算等重大事项。\n\n上述事实违反了《私募投资基金监督管理暂行办法》（证监会令第105号）第四条第一款、第二十三条第九项、第二十四条、第二十五条第一款的规定。\n\n按照《私募投资基金监督管理暂行办法》第三十三条的规定，现决定对你公司采取出具警示函的监督管理措施，并记入证券期货市场诚信档案。\n\n你公司应当加强相关法律法规学习，提高规范运作意识，切实保护投资者合法权益。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2023年1月29日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7067050/content.shtml"
+  },
+  {
+    "party": "珠海育邦私募股权投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2023-01-20",
+    "case_no": "2023〔2023〕3号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对珠海育邦私募股权投资基金管理有限公司采取责令改正措施的决定〔2023〕3号",
+    "content_text": "关于对珠海育邦私募股权投资基金管理有限公司采取责令改正措施的决定〔2023〕3号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c7011122/content.shtml"
   },
   {
     "party": "王凯",
@@ -46540,6 +47420,26 @@
     "content_text": "上海景洲投资管理有限公司：\n经查，你公司(上海景洲投资管理有限公司,统一社会信用代码：91310115323152236A)在开展私募基金业务活动中，存在以下事实：一是未向投资者披露基金承担的部分费用收取方为关联方；\n\n二是未向投资者披露与基金投资有关的可能影响投资者合法权益的重大信息；\n\n三是未及时更新管理人及其从业人员的有关信息；\n\n四是未妥善保存基金投资和投资者适当性管理等方面的相关资料。\n\n上述事实违反了《私募投资基金监督管理暂行办法》（证监会令105号）第二十四条、第二十五条第一款、第二十六条的规定。\n\n按照《私募投资基金监督管理暂行办法》第三十三条的规定，现决定对你公司采取出具警示函的监督管理措施，并记入证券期货市场诚信档案。\n\n你公司应当加强相关法律法规学习，提高规范运作意识，切实保护投资者合法权益。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2022年12月9日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c6916565/content.shtml"
+  },
+  {
+    "party": "广东润行私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2022-12-08",
+    "case_no": "2022〔2022〕180号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东润行私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕180号.docx",
+    "content_text": "关于对广东润行私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕180号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c6899829/content.shtml"
   },
   {
     "party": "上海煌延投资管理中心（有限合伙）",
@@ -47435,6 +48335,26 @@
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c5798025/content.shtml"
   },
   {
+    "party": "广东广晟创业投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2022-09-22",
+    "case_no": "2022〔2022〕127号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东广晟创业投资管理有限公司采取责令改正措施的决定〔2022〕127号.doc",
+    "content_text": "关于对广东广晟创业投资管理有限公司采取责令改正措施的决定〔2022〕127号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c5726716/content.shtml"
+  },
+  {
     "party": "申银万国期货有限公司",
     "party_type": "机构",
     "position": "",
@@ -47664,6 +48584,26 @@
     "content_text": "上海易德信股权投资管理有限公司：\n经查，你公司（上海易德信股权投资管理有限公司，统一社会信用代码：9131000055001807XH）在开展私募基金业务过程中，存在未如实对投资者持有基金份额进行工商登记，未充分履行谨慎勤勉义务的情形。\n\n上述事实违反了《私募投资基金监督管理暂行办法》（证监会令第105号）第四条第一款的规定。\n\n按照《私募投资基金监督管理暂行办法》第三十三条的规定，现决定对你公司采取出具警示函的监督管理措施，并记入证券期货市场诚信档案。\n\n你公司应当加强相关法律法规的学习，提高规范运作意识，切实保护投资者合法权益。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2022年9月8日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c5700875/content.shtml"
+  },
+  {
+    "party": "广东溢嘉私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2022-09-08",
+    "case_no": "2022〔2022〕126号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东溢嘉私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕126号",
+    "content_text": "关于对广东溢嘉私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕126号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c5632921/content.shtml"
   },
   {
     "party": "国道资产管理（上海）有限公司",
@@ -48700,6 +49640,26 @@
     "source_url": "https://www.csrc.gov.cn/shenzhen/c104320/c4271648/content.shtml"
   },
   {
+    "party": "正昊（广州）私募证券投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2022-07-08",
+    "case_no": "2022〔2022〕90号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对正昊（广州）私募证券投资管理有限公司采取出具警示函措施的决定〔2022〕90号.docx",
+    "content_text": "关于对正昊（广州）私募证券投资管理有限公司采取出具警示函措施的决定〔2022〕90号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104560/c4281383/content.shtml"
+  },
+  {
     "party": "王欣",
     "party_type": "自然人",
     "position": "",
@@ -48996,6 +49956,26 @@
     "content_text": "经查,我局发现你公司存在以下违规行为:\n一、投资咨询业务方面,一是合规管理不健全、信息公示不全面;二是适当性管理不健全,未对风险承受能力不匹配的情况进行特别风险警示,未根据投资者的类别判断适合其购买的产品或者接受的服务;三是部分宣传材料缺乏事实依据。\n二、基金销售业务方面,一是公司制度未根据法规变化情况及时更新、内部考核机制不健全、未设立产品准入委员会或者专门小组、未按要求每年进行监察稽核、合规负责人未取得基金从业资格;二是未对风险承受能力不匹配的情况进行特别风险警示、未了解投资者诚信记录。\n此外,在检查中发现公司存在分支机构未备案、对外宣传简称不规范等情况。\n以上事实有《关于江苏天鼎证券投资咨询有限公司现场检查事实确认书》、我局执法人员在现场检查中收集的证据证明。\n上述行为违反了《证券投资顾问业务暂行规定》(证监会公告〔2020〕66号)第九条、第二十四条,《关于加强对利用“荐股软件”从事证券投资咨询业务监管的暂行规定》(证监会公告〔2020〕66号)第四条,《证券期货投资者适当性管理办法》(证监会令第177号)第三条、第六条、第十八条、第十九条,《公开募集证券投资基金销售机构监督管理办法》(证监会令第175号)第二十六条、第二十七条、第三十条,《关于实施〈公开募集证券投资基金销售机构监督管理办法〉的规定》(证监会公告〔2020〕58号)第十七条的规定。\n依据《公开募集证券投资基金销售机构监督管理办法》(证监会令第175号)第五十三条、《证券期货投资者适当性管理办法》(证监会令第177号)第三十七条、《证券投资顾问业务暂行规定》(证监会公告〔2020〕66号)第三十二条的规定,我局决定对你公司采取责令改正的行政监管措施。你公司应当认真整改,提升合规管理水平,并于收到本决定书之日起15日内向我局提交书面整改报告,我局将视整改情况采取进一步措施。\n如果对本监督管理措施不服,你公司可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请,也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间,上述监督管理措施不停止执行。\n江苏证监局\n2022年6月7日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103901/c3503720/content.shtml"
+  },
+  {
+    "party": "广东珀源私募证券投资基金管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2022-05-31",
+    "case_no": "2022〔2022〕65号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广东珀源私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕65号",
+    "content_text": "关于对广东珀源私募证券投资基金管理有限公司采取责令改正措施的决定〔2022〕65号",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104549/c3183229/content.shtml"
   },
   {
     "party": "薛玉宝",
@@ -54303,6 +55283,26 @@
     "content_text": "〔2021〕120号北京嘉怡财富投资管理有限公司：\n经查，我局发现你公司基金经理李文东存在以下行为：一、存在安排非公司员工接待投资者等情况，反映未履行谨慎勤勉的义务。\n\n二、通过微信公众号等方式向不特定对象宣传推介。\n\n三、向投资者承诺投资本金不受损失或者承诺最低收益。\n\n李文东存在上述行为，反映你公司作为私募基金管理人，未履行谨慎勤勉的义务，违反了《私募投资基金监督管理暂行办法》（证监会令【第105号】，以下简称《暂行办法》）第四条之规定。\n\n依据《暂行办法》第三十三条之规定，我局决定对你公司采取出具警示函的行政监管措施。\n\n你公司应在收到本决定之日起30日内,向我局提交书面整改报告，我局将择机对你公司的整改落实情况组织检查验收。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起六个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证监会北京监管局2021年8月20日",
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c103560/c1535637/content.shtml"
+  },
+  {
+    "party": "共青城卓越润都创业投资合伙企业（有限合伙）",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2021-08-25",
+    "case_no": "2021〔2021〕64号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对共青城卓越润都创业投资合伙企业（有限合伙）采取出具警示函措施的决定 [2021]64号.docx",
+    "content_text": "关于对共青城卓越润都创业投资合伙企业（有限合伙）采取出具警示函措施的决定 [2021]64号.docx",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c79745a5efa294540bcc621e5370770ef/content.shtml"
   },
   {
     "party": "众和锦绣资本管理有限责任公司",
@@ -63139,6 +64139,26 @@
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c1069066/content.shtml"
   },
   {
+    "party": "广州百洋私募证券投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-11-01",
+    "case_no": "2019〔2019〕96号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对广州百洋私募证券投资管理有限公司采取责令改正措施的决定〔2019〕96号.doc",
+    "content_text": "关于对广州百洋私募证券投资管理有限公司采取责令改正措施的决定〔2019〕96号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383113/content.shtml"
+  },
+  {
     "party": "李宏",
     "party_type": "自然人",
     "position": "",
@@ -65150,6 +66170,56 @@
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103903/c1062601/content.shtml"
   },
   {
+    "party": "太库创业投资管理（横琴）有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-08-06",
+    "case_no": "2019〔2019〕48号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [],
+    "categories": [],
+    "violations": [],
+    "defense": [],
+    "laws": [],
+    "content_preview": "关于对太库创业投资管理（横琴）有限公司采取出具警示函措施的决定〔2019〕48号.doc",
+    "content_text": "关于对太库创业投资管理（横琴）有限公司采取出具警示函措施的决定〔2019〕48号.doc",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383193/content.shtml"
+  },
+  {
+    "party": "广州市犇鑫投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-08-05",
+    "case_no": "2019〔2019〕49号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/合格投资者",
+      "募集销售与投资者适当性/销售违规"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》第三十三条",
+      "《证券期货投资者适当性管理办法》第三十七条",
+      "《私募投资基金监督管理暂行办法》第十六条",
+      "《证券期货投资者适当性管理办法》第三条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n49\n号\n关于对广州市犇鑫投资管理有限公司采取出具警示函措施的决定\n广州市犇鑫投资管理有限公司：\n我局近期对你公司进行了核查，发现你公司销售犇鑫价值五号私募证券投资基金（以下简称价值五号基金）时，未对投资者的风险识别能力和风险承担能力进行评估，不符合《私募投资基金监督管理暂行办法》（以下简称《暂行办法》）第十六条、《证券期货投资者适当性管理办法》（以下简称《适当性管理办法》）第三条及第六条的规定。\n根据《暂行办法》第三十三条以及《适当性管理办法》第三十七条的规定，现决定对你公司采取出具警示函的行政监管措施。你公司应高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n8\n月\n2\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n49\n号\n关于对广州市犇鑫投资管理有限公司采取出具警示函措施的决定\n广州市犇鑫投资管理有限公司：\n我局近期对你公司进行了核查，发现你公司销售犇鑫价值五号私募证券投资基金（以下简称价值五号基金）时，未对投资者的风险识别能力和风险承担能力进行评估，不符合《私募投资基金监督管理暂行办法》（以下简称《暂行办法》）第十六条、《证券期货投资者适当性管理办法》（以下简称《适当性管理办法》）第三条及第六条的规定。\n根据《暂行办法》第三十三条以及《适当性管理办法》第三十七条的规定，现决定对你公司采取出具警示函的行政监管措施。你公司应高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n8\n月\n2\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383205/content.shtml"
+  },
+  {
     "party": "东方证券股份有限公司",
     "party_type": "机构",
     "position": "",
@@ -65254,6 +66324,35 @@
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103940/c1577069/content.shtml"
   },
   {
+    "party": "阳明资产管理（横琴）有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-07-25",
+    "case_no": "2019〔2019〕42号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "公司治理与登记备案/人员场所"
+    ],
+    "categories": [
+      "公司治理与登记备案"
+    ],
+    "violations": [],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》",
+      "《办法》第三十三条",
+      "《办法》第二十四条",
+      "《办法》第二十六条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n42\n号\n关于对阳明资产管理（横琴）有限公司采取责令改正措施的决定\n阳明资产管理（横琴）有限公司：\n我局于\n2019\n年\n7\n月\n2\n日至\n4\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n一、你公司合规风控负责人、副总经理等高级管理人员发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第二十五条的规定。\n二、你公司在管理某私募基金产品过程中，未按照协议约定向投资者披露基金相关信息。上述行为不符合《办法》第二十四条的规定。\n三、你公司未妥善保存私募基金投资交易相关资料。上述行为不符合《办法》第二十六条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n7\n月\n24\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n42\n号\n关于对阳明资产管理（横琴）有限公司采取责令改正措施的决定\n阳明资产管理（横琴）有限公司：\n我局于\n2019\n年\n7\n月\n2\n日至\n4\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n一、你公司合规风控负责人、副总经理等高级管理人员发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第二十五条的规定。\n二、你公司在管理某私募基金产品过程中，未按照协议约定向投资者披露基金相关信息。上述行为不符合《办法》第二十四条的规定。\n三、你公司未妥善保存私募基金投资交易相关资料。上述行为不符合《办法》第二十六条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n7\n月\n24\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383209/content.shtml"
+  },
+  {
     "party": "",
     "party_type": "自然人",
     "position": "",
@@ -65312,6 +66411,37 @@
     "content_text": "〔2019〕69号关于对中信建投证券股份有限公司采取责令增加内部合规检查次数措施的决定中信建投证券股份有限公司：经查，你公司存在以下问题：一、你公司私募子公司中信建投资本管理有限公司（以下简称建投资本）在完成组织架构规范整改公示前实际开展业务，违反《证券公司私募投资基金子公司管理规范》第三十七条的规定。\n\n二、你公司开展国债期货等部分品种自营交易的投资决策和交易执行未分离，违反了《证券公司内部控制指引》第五十条的规定。\n\n上述问题反映出你公司内部控制不完善，对重要业务部门和子公司经营管理行为的合规性监督检查不到位，根据《证券公司监督管理条例》第七十条第一款第一项的规定，我局决定责令你公司在决定书作出之日起3个月内改正，完善内部控制流程，加强对子公司的合规管理，并在2019年6月30日至2020年6月30日期间，每6个月开展一次内部合规检查，在每次检查后10个工作日内，向我局报送合规检查报告，我局将在日常监管中持续关注你公司的整改情况。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证监会北京监管局2019年7月5日",
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c103560/c1536071/content.shtml"
+  },
+  {
+    "party": "赵淦鸿",
+    "party_type": "自然人",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-07-05",
+    "case_no": "2019〔2019〕40号",
+    "penalty": "认定为不适当人选",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/销售违规"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [
+      "赵淦鸿担任东莞证券股份有限公司（以下简称东莞证券）虎门分公司负责人期间，在未经过东莞证券审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金"
+    ],
+    "defense": [],
+    "laws": [
+      "《证券公司董事、监事和高级管理人员任职资格监管办法》第五十三条",
+      "《证券公司董事、监事和高级管理人员任职资格监管办法》第四条",
+      "《证券公司代销金融产品管理规定》第二十条",
+      "《证券公司代销金融产品管理规定》第六条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n40\n号\n关于对赵淦鸿采取认定为不适当人选措施的决定\n赵淦鸿、东莞证券股份有限公司：\n经查，赵淦鸿担任东莞证券股份有限公司（以下简称东莞证券）虎门分公司负责人期间，在未经过东莞证券审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金。\n以上事实有相关谈话笔录、情况说明、事件报告等证据证明。\n上述行为违反了《证券公司代销金融产品管理规定》第六条、《证券公司董事、监事和高级管理人员任职资格监管办法》第四条的规定。按照《证券公司代销金融产品管理规定》第二十条、《证券公司董事、监事和高级管理人员任职资格监管办法》第五十三条的规定，我局决定：\n认定赵淦鸿（身份证号：\n44190019******547X\n）为不适当人选，自本决定作出之日起两年内不得担任证券公司的董事、监事、高级管理人员和分支机构负责人等职务或者实际履行上述职务。\n如果对本监督管理措施不服的，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n6\n月\n26\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n40\n号\n关于对赵淦鸿采取认定为不适当人选措施的决定\n赵淦鸿、东莞证券股份有限公司：\n经查，赵淦鸿担任东莞证券股份有限公司（以下简称东莞证券）虎门分公司负责人期间，在未经过东莞证券审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金。\n以上事实有相关谈话笔录、情况说明、事件报告等证据证明。\n上述行为违反了《证券公司代销金融产品管理规定》第六条、《证券公司董事、监事和高级管理人员任职资格监管办法》第四条的规定。按照《证券公司代销金融产品管理规定》第二十条、《证券公司董事、监事和高级管理人员任职资格监管办法》第五十三条的规定，我局决定：\n认定赵淦鸿（身份证号：\n44190019******547X\n）为不适当人选，自本决定作出之日起两年内不得担任证券公司的董事、监事、高级管理人员和分支机构负责人等职务或者实际履行上述职务。\n如果对本监督管理措施不服的，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n6\n月\n26\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383213/content.shtml"
   },
   {
     "party": "爱建证券有限责任公司",
@@ -65621,6 +66751,65 @@
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103940/c1577075/content.shtml"
   },
   {
+    "party": "横琴润弘投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-05-15",
+    "case_no": "2019〔2019〕33号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/合格投资者",
+      "募集销售与投资者适当性/销售违规"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》",
+      "《办法》第三十三条",
+      "《办法》第十一条",
+      "《办法》第十三条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n33\n号\n关于对横琴润弘投资管理有限公司采取责令改正措施的决定\n横琴润弘投资管理有限公司：\n我局于\n2019\n年\n4\n月\n15\n日至\n4\n月\n19\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n一、你公司管理的部分基金产品在基金合同中约定预期投资收益率及定期分配时间，并按照约定向投资者支付收益。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第十五条的规定。\n二、你公司所管理的部分私募基金产品向不合格投资者\n募集资金。上述行为不符合《办法》第十一条、第十二条的规定。\n三、你公司所管理的部分私募基金产品的投资者为非法人形式的合伙企业，你公司未对该基金穿透核查最终投资者是否为合格投资者。上述行为不符合《办法》第十三条的规定。\n四、你公司合规负责人、风控总监发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合\n《办法》\n第二十五条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n5\n月\n14\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n33\n号\n关于对横琴润弘投资管理有限公司采取责令改正措施的决定\n横琴润弘投资管理有限公司：\n我局于\n2019\n年\n4\n月\n15\n日至\n4\n月\n19\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n一、你公司管理的部分基金产品在基金合同中约定预期投资收益率及定期分配时间，并按照约定向投资者支付收益。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第十五条的规定。\n二、你公司所管理的部分私募基金产品向不合格投资者\n募集资金。上述行为不符合《办法》第十一条、第十二条的规定。\n三、你公司所管理的部分私募基金产品的投资者为非法人形式的合伙企业，你公司未对该基金穿透核查最终投资者是否为合格投资者。上述行为不符合《办法》第十三条的规定。\n四、你公司合规负责人、风控总监发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合\n《办法》\n第二十五条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n5\n月\n14\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383227/content.shtml"
+  },
+  {
+    "party": "横琴平安不动产股权投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-05-15",
+    "case_no": "2019〔2019〕32号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/合格投资者",
+      "募集销售与投资者适当性/销售违规"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》",
+      "《办法》第二十四条",
+      "《办法》第三十三条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n32\n号\n关于对横琴平安不动产股权投资管理有限公司采取责令改正措施的决定\n横琴平安不动产股权投资管理有限公司：\n我局于\n2019\n年\n3\n月\n25\n日至\n4\n月\n3\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n你公司所管理的部分私募基金产品向不合格投资者募集资金。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第十一条、第十二条的规定。\n二、你公司在管理某私募基金产品过程中，未按照协议约定向投资者披露可能对投资者利益产生重大影响的信息。上述行为不符合《办法》第二十四条的规定。\n三、你公司总经理、执行董事兼法定代表人等高级管理人员发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合\n《办法》\n第二十五条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n5\n月\n14\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n32\n号\n关于对横琴平安不动产股权投资管理有限公司采取责令改正措施的决定\n横琴平安不动产股权投资管理有限公司：\n我局于\n2019\n年\n3\n月\n25\n日至\n4\n月\n3\n日对你公司进行了现场检查\n,\n发现你公司存在以下问题：\n你公司所管理的部分私募基金产品向不合格投资者募集资金。上述行为不符合《私募投资基金监督管理暂行办法》\n(\n以下简称《办法》）第十一条、第十二条的规定。\n二、你公司在管理某私募基金产品过程中，未按照协议约定向投资者披露可能对投资者利益产生重大影响的信息。上述行为不符合《办法》第二十四条的规定。\n三、你公司总经理、执行董事兼法定代表人等高级管理人员发生变更后，未及时向中国证券投资基金业协会报告。上述行为不符合\n《办法》\n第二十五条的规定。\n根据《办法》第三十三条的规定，现决定对你公司采取责令改正的行政监管措施。你公司应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你公司整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n5\n月\n14\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383229/content.shtml"
+  },
+  {
     "party": "上海宝龙实业发展（集团）有限公司",
     "party_type": "机构",
     "position": "",
@@ -65688,6 +66877,67 @@
     "content_text": "宜兴中科金源创业投资企业（有限合伙）\n：\n经查，发现你企业存在以下违规行为：\n你企业及一致行动人截至2月28日收盘合计持有常州神力电机股份有限公司（以下简称神力股份）股份比例为\n10.048\n%。\n你企业在未提前15个交易日预先披露相关减持计划的情况下，分别于3月1日及3月4日通过上海证券交易所集中竞价交易系统累计减持公司股份10万股，成交价格区间17.28—17.58元/股，成交金额173.98万元。\n你企业未能在首次减持公司股票的15个交易日前预先披露减持计划，\n违反了《上市公司信息披露管理办法》第四十六条、\n《上市公司股东、董监高减持股份的若干规定》第八条的规定。\n根据\n《上市公司信息披露管理办法》第五十九条、《上市公司股东、董监高减持股份的若干规定》第十四条的规定，\n我局决定对你企业\n采取出具警示函的监管措施\n。你企业应\n严格遵守《证券法》《\n上市公司信息披露管理办法》\n等相关规定，杜绝违法违规行为再次发生。同时，要加强对证券法律法规及相关制度的学习，进一步提高作为上市公司股东的规范意识\n。\n如果对本监督管理措施不服的，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n江苏证监局\n201\n9\n年\n4\n月\n25\n日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103902/c1064430/content.shtml"
+  },
+  {
+    "party": "东莞证券股份有限公司虎门分公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-04-19",
+    "case_no": "2019〔2019〕27号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/销售违规"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [
+      "你分公司原负责人赵某在未经过东莞证券股份有限公司（以下简称东莞证券）审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金"
+    ],
+    "defense": [],
+    "laws": [
+      "《证券公司和证券投资基金管理公司合规管理办法》第三十二条",
+      "《证券公司和证券投资基金管理公司合规管理办法》第六条",
+      "《证券公司代销金融产品管理规定》第二十条",
+      "《证券公司代销金融产品管理规定》第六条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕27号\n关于对东莞证券股份有限公司虎门分公司采取出具警示函措施的决定\n东莞证券股份有限公司虎门分公司：\n经查，你分公司原负责人赵某在未经过东莞证券股份有限公司（以下简称东莞证券）审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金。上述行为违反了《证券公司和证券投资基金管理公司合规管理办法》第六条、《证券公司代销金融产品管理规定》第六条的规定。\n按照《证券公司和证券投资基金管理公司合规管理办法》第三十二条、《证券公司代销金融产品管理规定》第二十条的规定，我局决定对你分公司采取出具警示函的行政监管措施。你分公司应当高度重视上述问题，组织工作人员切实加强对证券法律法规的学习，在前期自查自纠基础上，进一步加强内部管控，杜绝此类事件再次发生。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n201\n9\n年\n4\n月\n15\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕27号\n关于对东莞证券股份有限公司虎门分公司采取出具警示函措施的决定\n东莞证券股份有限公司虎门分公司：\n经查，你分公司原负责人赵某在未经过东莞证券股份有限公司（以下简称东莞证券）审批的情况下，组织员工向客户销售非东莞证券代销的私募证券投资基金。上述行为违反了《证券公司和证券投资基金管理公司合规管理办法》第六条、《证券公司代销金融产品管理规定》第六条的规定。\n按照《证券公司和证券投资基金管理公司合规管理办法》第三十二条、《证券公司代销金融产品管理规定》第二十条的规定，我局决定对你分公司采取出具警示函的行政监管措施。你分公司应当高度重视上述问题，组织工作人员切实加强对证券法律法规的学习，在前期自查自纠基础上，进一步加强内部管控，杜绝此类事件再次发生。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请；也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n201\n9\n年\n4\n月\n15\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383235/content.shtml"
+  },
+  {
+    "party": "万联证券股份有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-04-19",
+    "case_no": "2019〔2019〕18号",
+    "penalty": "责令增加内部合规检查次数并提交合规检查报告",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "公司治理与登记备案/内控合规"
+    ],
+    "categories": [
+      "公司治理与登记备案"
+    ],
+    "violations": [
+      "你公司存在以下问题：\n你公司私募投资基金子公司万联天泽资本投资有限公司（以下简称万联天泽）在完成组织架构规范整改公示前实际开展业务，且在\n2017\n年\n9\n月证监会强调相关规范要求后仍有\n5\n只违规产品出现投资者首笔款项缴款的情况",
+      "万联天泽上述行为"
+    ],
+    "defense": [],
+    "laws": [
+      "《证券公司私募投资基金子公司管理规范》第三十七条",
+      "《证券公司监督管理条例》第七十条第一款"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n18\n号\n关于对万联证券股份有限公司采取责令增加内部合规检查次数并提交合规检查报告措施的决定\n万联证券股份有限公司：\n经查，你公司存在以下问题：\n你公司私募投资基金子公司万联天泽资本投资有限公司（以下简称万联天泽）在完成组织架构规范整改公示前实际开展业务，且在\n2017\n年\n9\n月证监会强调相关规范要求后仍有\n5\n只违规产品出现投资者首笔款项缴款的情况。\n万联天泽上述行为违反了《证券公司私募投资基金子公司管理规范》第三十七条的规定，反映出你公司对子公司经营管理行为的合规性监督检查不到位。按照《证券公司监督管理条例》第七十条第一款的规定，我局决定责令你公司增加内部合规检查次数并提交合规检查报告，自本监管措施下发之日起\n6\n个月内，每\n2\n个月对子公司经营管理行为的合规性和组织架构规范整改工作的落实情况开展一次内部合规检查，\n及时发现违法违规行为和风险隐患并予以改正消除，根据检查情况切实完善管理制度和内部控制措施，并在每次检查后\n10\n个工作日内，向我局报送合规检查报告。\n如果对本监督管理措施不服，可在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n3\n月\n12\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n18\n号\n关于对万联证券股份有限公司采取责令增加内部合规检查次数并提交合规检查报告措施的决定\n万联证券股份有限公司：\n经查，你公司存在以下问题：\n你公司私募投资基金子公司万联天泽资本投资有限公司（以下简称万联天泽）在完成组织架构规范整改公示前实际开展业务，且在\n2017\n年\n9\n月证监会强调相关规范要求后仍有\n5\n只违规产品出现投资者首笔款项缴款的情况。\n万联天泽上述行为违反了《证券公司私募投资基金子公司管理规范》第三十七条的规定，反映出你公司对子公司经营管理行为的合规性监督检查不到位。按照《证券公司监督管理条例》第七十条第一款的规定，我局决定责令你公司增加内部合规检查次数并提交合规检查报告，自本监管措施下发之日起\n6\n个月内，每\n2\n个月对子公司经营管理行为的合规性和组织架构规范整改工作的落实情况开展一次内部合规检查，\n及时发现违法违规行为和风险隐患并予以改正消除，根据检查情况切实完善管理制度和内部控制措施，并在每次检查后\n10\n个工作日内，向我局报送合规检查报告。\n如果对本监督管理措施不服，可在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n3\n月\n12\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383237/content.shtml"
   },
   {
     "party": "常州大洋线缆股份有限公司",
@@ -65760,6 +67010,37 @@
     "content_text": "光大证券股份有限公司：\n经查，你公司存在以下问题：一是子公司管控机制不完善，对子公司管控不力，公司内部控制存在缺陷；\n\n二是向个别客户提供的某资产管理产品推介材料存在不当表述。\n\n上述行为违反了《证券公司监督管理条例》第二十七条第一款、《证券公司客户资产管理业务管理办法》（证监会令第93号）第三条第一款、《证券公司集合资产管理业务实施细则》（证监会公告〔2013〕28号）第二十条规定。\n\n根据《证券公司监督管理条例》第七十条第一款、《证券公司客户资产管理业务管理办法》（证监会令第93号）第五十七条，我局决定：责令你公司在2019年4月1日至2020年3月31日期间，每3个月开展一次内部合规检查，并在每次检查后10个工作日内，向我局报送合规检查报告。\n\n如果对本监督管理措施不服，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起6个月内向有管辖权的人民法院提起诉讼。\n\n复议与诉讼期间，上述监督管理措施不停止执行。\n\n中国证券监督管理委员会上海监管局2019年4月10日",
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c1069110/content.shtml"
+  },
+  {
+    "party": "中国银河证券股份有限公司东莞东城中路证券营业部",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2019-04-01",
+    "case_no": "2019〔2019〕19号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "募集销售与投资者适当性/承诺收益"
+    ],
+    "categories": [
+      "募集销售与投资者适当性"
+    ],
+    "violations": [
+      "你营业部存在员工私下为私募基金管理公司介绍私募\n基金购买人，私自推介非你公司代销的金融产品，并且向投资者承诺保本保收益的行为，反映出你营业部合规管理不到位"
+    ],
+    "defense": [],
+    "laws": [
+      "《\n证券公司和证券投资基金管理公司合规管理办法\n》第三十二条",
+      "《\n证券公司和证券投资基金管理公司合规管理办法\n》第六条",
+      "《证券公司分支机构监管规定》第二十条",
+      "《证券公司分支机构监管规定》第十八条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n19\n号\n关于对中国银河证券股份有限公司东莞东城中路证券营业部采取出具警示函措施的决定\n中国银河证券股份有限公司东莞东城中路证券营业部：\n经查，你营业部存在员工私下为私募基金管理公司介绍私募\n基金购买人，私自推介非你公司代销的金融产品，并且向投资者承诺保本保收益的行为，反映出你营业部合规管理不到位。你营业部在发现员工私自推介金融产品，并引发投资者投诉维权后，未及时向我局报告。上述行为违反了《\n证券公司和证券投资基金管理公司合规管理办法\n》第六条、《证券公司分支机构监管规定》第十八条的规定。\n根据《\n证券公司和证券投资基金管理公司合规管理办法\n》第三十二条、《证券公司分支机构监管规定》第二十条的规定，我局决定\n对你营业部采取出具警示函的监管措施。你营业部应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你营业部整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n3\n月\n22\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔\n2019\n〕\n19\n号\n关于对中国银河证券股份有限公司东莞东城中路证券营业部采取出具警示函措施的决定\n中国银河证券股份有限公司东莞东城中路证券营业部：\n经查，你营业部存在员工私下为私募基金管理公司介绍私募\n基金购买人，私自推介非你公司代销的金融产品，并且向投资者承诺保本保收益的行为，反映出你营业部合规管理不到位。你营业部在发现员工私自推介金融产品，并引发投资者投诉维权后，未及时向我局报告。上述行为违反了《\n证券公司和证券投资基金管理公司合规管理办法\n》第六条、《证券公司分支机构监管规定》第十八条的规定。\n根据《\n证券公司和证券投资基金管理公司合规管理办法\n》第三十二条、《证券公司分支机构监管规定》第二十条的规定，我局决定\n对你营业部采取出具警示函的监管措施。你营业部应当高度重视上述问题，将相关责任追究到人，制定切实有效的整改方案，对存在的问题进行整改，并于收到本决定书后\n30\n日内将整改报告、内部问责情况报告及相关责任人的书面检查报送我局。我局将视情况对你营业部整改落实情况进行检查。\n如果对本监督管理措施不服，可以在收到本决定书之日起\n60\n日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n广东证监局\n2019\n年\n3\n月\n22\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383251/content.shtml"
   },
   {
     "party": "新纪元期货股份有限公司",
@@ -66150,6 +67431,67 @@
     "content_text": "弘业期货股份有限公司\n：\n经查，你公司存在以下问题：\n一、\n违反合同约定将资管计划募集期利息归属公司，违反了\n《\n期货公司监督管理办法\n》（以下简称《办法》）\n第六十九条的规定。\n二、\n通过公开网站向不特定对象宣传具体资产管理计划，不符合《证券期货经营机构私募资产管理业务运作管理暂行规定》第三条的规定，违反了《办法》第四十六条的规定。\n三、\n资管业务交易中存在不规范情形：通过证券客户端直接进行交易，未经系统风控或风控专员审核；投资经理直接执行投资指令，未经交易员确认；净值触发合同约定禁止开仓线，仍然继续开仓。前述情形违反了\n《办法》\n第四十六条的规定。\n根据《办法》第八十七条的规定\n，\n我局决定对你公司采取责令改正的监管措施。你公司应对上述问题予以改正，并于\n2018年10月31日前向我局提交整改报告，我局将组织检查验收\n。\n如果对本监督管理措施不服的，可以在收到本决定书之日起60日内向中国证券监督管理委员会提出行政复议申请，也可以在收到本决定书之日起\n6\n个月内向有管辖权的人民法院提起诉讼。复议与诉讼期间，上述监督管理措施不停止执行。\n江苏证监局\n2018\n年\n10\n月\n22\n日",
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103903/c1062629/content.shtml"
+  },
+  {
+    "party": "华泰期货有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2018-10-24",
+    "case_no": "2018〔2018〕78号",
+    "penalty": "责令改正的",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "产品运作与合同一致性/期货与资管业务",
+      "募集销售与投资者适当性/合格投资者"
+    ],
+    "categories": [
+      "产品运作与合同一致性",
+      "募集销售与投资者适当性"
+    ],
+    "violations": [
+      "你公司资产管理业务存在以下问题：一\n是为应付检查，公司于检查进场前一日对不满足合同风控要求的资管系统风控设置进行修改"
+    ],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》第十六条",
+      "《期货公司监督管理办法》第四十六条",
+      "《期货公司监督管理办法》第八十七条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔2018〕\n78\n号\n关于对华泰期货有限公司采取责令改正措施的决定\n华泰期货有限公司\n：\n经查，\n你公司资产管理业务存在以下问题：一\n是为应付检查，公司于检查进场前一日对不满足合同风控要求的资管系统风控设置进行修改；二是投资者适当性管理不规范。相关问题违反了《期货公司监督管理办法》第四十六条、四十七条和《私募投资基金监督管理暂行办法》第十六条的规定。根据《期货公司监督管理办法》第八十七条的规定，\n我局决定对你公司采取责令改正的的监督管理措施。\n你公司应高度重视，切实采取整改措施，\n加强资产管理业务管理，依法合规开展业务\n。\n你公司应当于收到本决定书之日起\n30日内\n向我局提交书面整改报告，我局将对你公司的整改情况组织检查验收。\n如对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n8\n年\n10\n月\n17\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔2018〕\n78\n号\n关于对华泰期货有限公司采取责令改正措施的决定\n华泰期货有限公司\n：\n经查，\n你公司资产管理业务存在以下问题：一\n是为应付检查，公司于检查进场前一日对不满足合同风控要求的资管系统风控设置进行修改；二是投资者适当性管理不规范。相关问题违反了《期货公司监督管理办法》第四十六条、四十七条和《私募投资基金监督管理暂行办法》第十六条的规定。根据《期货公司监督管理办法》第八十七条的规定，\n我局决定对你公司采取责令改正的的监督管理措施。\n你公司应高度重视，切实采取整改措施，\n加强资产管理业务管理，依法合规开展业务\n。\n你公司应当于收到本决定书之日起\n30日内\n向我局提交书面整改报告，我局将对你公司的整改情况组织检查验收。\n如对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n8\n年\n10\n月\n17\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383339/content.shtml"
+  },
+  {
+    "party": "广发期货有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2018-10-23",
+    "case_no": "2018〔2018〕77号",
+    "penalty": "责令改正",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "产品运作与合同一致性/期货与资管业务"
+    ],
+    "categories": [
+      "产品运作与合同一致性"
+    ],
+    "violations": [
+      "你公司资产管理业务存在第三方投顾或投资经理直接执行投资指令、未经交易员确认的问题\n，"
+    ],
+    "defense": [],
+    "laws": [
+      "《期货公司监督管理办法》第四十六条",
+      "《期货公司监督管理办法》第八十七条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔2018〕\n77\n号\n关于\n对广发期货有限公司\n采取\n责令改正\n措施的决定\n广发期货有限公司\n：\n经查，\n你公司资产管理业务存在第三方投顾或投资经理直接执行投资指令、未经交易员确认的问题\n，违反了《期货公司监督管理办法》第四十六条的规定。根据《期货公司监督管理办法》第八十七条的规定，\n我局决定对你公司采取责令改正的监督管理措施。\n你公司应高度重视，切实采取整改措施，\n加强资产管理业务管理，依法合规开展业务\n。\n你公司应当于收到本决定书之日起\n30日内\n向我局提交书面整改报告，我局将对你公司的整改情况组织检查验收。\n如对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n8\n年\n10\n月\n17\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔2018〕\n77\n号\n关于\n对广发期货有限公司\n采取\n责令改正\n措施的决定\n广发期货有限公司\n：\n经查，\n你公司资产管理业务存在第三方投顾或投资经理直接执行投资指令、未经交易员确认的问题\n，违反了《期货公司监督管理办法》第四十六条的规定。根据《期货公司监督管理办法》第八十七条的规定，\n我局决定对你公司采取责令改正的监督管理措施。\n你公司应高度重视，切实采取整改措施，\n加强资产管理业务管理，依法合规开展业务\n。\n你公司应当于收到本决定书之日起\n30日内\n向我局提交书面整改报告，我局将对你公司的整改情况组织检查验收。\n如对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n8\n年\n10\n月\n17\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383341/content.shtml"
   },
   {
     "party": "浙江厚兴股权投资基金管理有限公司",
@@ -70064,6 +71406,36 @@
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103892/c1062232/content.shtml"
   },
   {
+    "party": "广州安州投资管理有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2015-12-16",
+    "case_no": "",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "产品运作与合同一致性/估值违规",
+      "产品运作与合同一致性/风险指标违规"
+    ],
+    "categories": [
+      "产品运作与合同一致性"
+    ],
+    "violations": [
+      "你公司存在以下违规行为：\n你公司\n作为“安州价值优选1号证券投资基金”、“安州价值优选2号证券投资基金”和“安州价值优选3号证券投资基金”（以下简称安州1、2、3号基金）的管理人，在7月2日安州2、3号基金跌破基金合同约定的止损线，7月7日安州1号基金跌破基金合同约定的止损线后，未按照上述基金合同中止损条款规定的“以可变现为第一原则”尽可能进行变现，只是卖出部分持仓股票"
+    ],
+    "defense": [],
+    "laws": [
+      "《私募投资基金监督管理暂行办法》第三十三条",
+      "《私募投资基金监督管理暂行办法》第二十三条"
+    ],
+    "content_preview": "广州安州投资管理有限公司：\n经查，你公司存在以下违规行为：\n你公司\n作为“安州价值优选1号证券投资基金”、“安州价值优选2号证券投资基金”和“安州价值优选3号证券投资基金”（以下简称安州1、2、3号基金）的管理人，在7月2日安州2、3号基金跌破基金合同约定的止损线，7月7日安州1号基金跌破基金合同约定的止损线后，未按照上述基金合同中止损条款规定的“以可变现为第一原则”尽可能进行变现，只是卖出部分持仓股票；在7月6日、7月24日、8月10日等上述基金净值处于止损线以下的时间，仍然进行证券买入操作，未\n按照基金合同约定\n进行清盘操作。\n上述行为违反了《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《暂行办法》）第二十三条第七项有关规定。\n根据《暂行办法》第三十三条的规定，我局现对你公司予以警示。你公司应认真吸取教训，加强证券法律法规的学习，依法合规经营私募基金业务，切实履行合同约定义务，杜绝此类事件再次发生。\n如果对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n2015年12月\n16\n日",
+    "content_text": "广州安州投资管理有限公司：\n经查，你公司存在以下违规行为：\n你公司\n作为“安州价值优选1号证券投资基金”、“安州价值优选2号证券投资基金”和“安州价值优选3号证券投资基金”（以下简称安州1、2、3号基金）的管理人，在7月2日安州2、3号基金跌破基金合同约定的止损线，7月7日安州1号基金跌破基金合同约定的止损线后，未按照上述基金合同中止损条款规定的“以可变现为第一原则”尽可能进行变现，只是卖出部分持仓股票；在7月6日、7月24日、8月10日等上述基金净值处于止损线以下的时间，仍然进行证券买入操作，未\n按照基金合同约定\n进行清盘操作。\n上述行为违反了《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《暂行办法》）第二十三条第七项有关规定。\n根据《暂行办法》第三十三条的规定，我局现对你公司予以警示。你公司应认真吸取教训，加强证券法律法规的学习，依法合规经营私募基金业务，切实履行合同约定义务，杜绝此类事件再次发生。\n如果对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n2015年12月\n16\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383413/content.shtml"
+  },
+  {
     "party": "《办法》第八条规定，本办法所称诚信信息包括",
     "party_type": "机构",
     "position": "",
@@ -70108,6 +71480,36 @@
     "content_text": "2012年9月1日起施行的《证券期货市场诚信监督管理暂行办法》(证监会令第80号，以下简称《办法》)，是中国资本市场首部关于诚信监管的行政规章。\n\n《办法》的出台有助于进一步夯实资本市场诚信基础，对保障市场健康稳定发展、保护投资者合法权益意义重大。\n\n《办法》于2014年9月进行了修订，修订后的新《办法》自2014年10月15日起施行。\n\n现将《办法》主要内容以知识问答方式编辑如下，供大家学习、理解和使用。\n\n1.哪些市场主体的诚信信息被记入了证券期货市场诚信档案数据库?《办法》第七条规定，下列从事证券期货市场活动的公民、法人或其他组织的诚信信息，记入诚信档案：(一)证券业从业人员和期货从业人员;(二)发行人、上市公司及其董事、监事、高级管理人员、主要股东和实际控制人;(三)证券公司、基金管理公司、期货公司及其董事、监事、高级管理人员、主要股东和实际控制人;(四)会计师事务所、律师事务所、保荐机构、财务顾问机构、资产评估机构、投资咨询机构、信用评级机构等证券期货服务机构及其从业人员;(五)独立基金销售机构、基金评价机构及其相关业务人员，非公开募集基金管理人、合格境外机构投资者、合格境内机构投资者及其主要投资管理人员，境外证券类机构驻华代表机构及其首席代表;(六)为证券期货业提供信息技术服务或者软硬件产品的供应商;(七)为发行人、上市公司提供投资者关系管理及其他公关服务的服务机构及其人员;(八)其他有与证券期货市场活动相关的违法失信行为的公民、法人或其他组织。\n\n2.通过证券期货市场诚信档案数据库可以查询到哪些诚信信息?《办法》第八条规定，本办法所称诚信信息包括：(一)公民的姓名、性别、国籍、身份证件号码，法人或其他组织的名称、住所、组织机构代码等基本信息;(二)中国证监会、国务院其他主管部门等其他省部级及以上单位和证券期货交易所、证券期货市场行业协会、证券登记结算机构等全国性证券期货市场行业组织(以下简称证券期货市场行业组织)作出的表彰、奖励、评比，以及信用评级机构作出的信用评级;(三)中国证监会及其派出机构作出的行政许可决定;(四)发行人、上市公司及其主要股东、实际控制人，董事、监事和高级管理人员，重大资产重组交易各方，及收购人所作的公开承诺的未履行或未如期履行、正在履行、已如期履行等情况;(五)中国证监会及其派出机构作出的行政处罚、市场禁入决定和采取的监督管理措施;(六)证券期货市场行业组织实施的纪律处分措施和法律、行政法规、规章规定的管理措施;(七)因涉嫌证券期货违法被中国证监会及其派出机构调查及采取强制措施;(八)因涉嫌证券期货犯罪被中国证监会及其派出机构移送公安机关、人民检察院处理;(九)因证券期货犯罪或其他犯罪被人民法院判处刑罚;(十)因证券期货侵权、违约行为被人民法院判决承担较大民事赔偿责任;(十一)因违法开展经营活动被银行、保险、财政、税收、环保、工商、海关等相关主管部门予以行政处罚;(十二)违背诚实信用原则的其他行为信息。\n\n3.诚信信息的有效期是多长?《办法》第十三条规定，本办法第八条规定的违法失信信息，在诚信档案中的效力期限为3年，但因证券期货违法行为被行政处罚、市场禁入、刑事处罚和判决承担较大侵权、违约民事赔偿责任的信息，其效力期限为5年。\n\n法律、行政法规和中国证监会其他规章对违法失信信息的效力期限另有规定的，从其规定。\n\n效力期限自对违法失信行为的处理决定执行完毕之日起算。\n\n4.哪些诚信信息需要市场主体自行申报?申报的基本要求是什么?《办法》第九条规定，本办法第七条所列公民、法人或其他组织所受表彰、奖励、评比和信用评级信息，由其自行向中国证监会及其派出机构申报，记入诚信档案。\n\n《办法》第三十九条规定，公民、法人或其他组织对自己申报和依法报告、公告的诚信信息的真实性、准确性、完整性负责。\n\n公民、法人或其他组织申报、报告和公告的诚信信息，有虚假内容的，中国证监会及其派出机构可以采取责令改正、监管谈话、出具警示函、责令公开说明等监督管理措施;情节严重的，依法追究法律责任。\n\n浙江证监局法制工作处负责办理浙江辖区市场主体提出的诚信信息申报申请。\n\n5.诚信信息能查询吗?《办法》第十四条规定，本办法第八条第(二)、(三)、(四)、(六)项信息和第(五)项的行政处罚、市场禁入信息依法向社会公开。\n\n社会公众也可通过中国证监会的互联网网站上的资本市场违法失信信息公开查询平台查询本办法第八条第(五)项的行政处罚、市场禁入信息和第(六)项信息等违法失信信息。\n\n第十五条规定，除本办法第十四条规定之外的诚信信息，公民、法人或其他组织可以根据本办法规定向中国证监会及其派出机构申请查询。\n\n浙江证监局法制工作处负责办理浙江辖区市场主体提出的诚信信息查询申请。\n\n6.哪些人可以申请查询诚信信息?《办法》第十六条规定，公民、法人或其他组织提出诚信信息查询申请，符合以下条件之一的，中国证监会及其派出机构应当予以办理：(一)公民、法人或其他组织申请查询自己的诚信信息的;(二)发行人、上市公司申请查询拟任董事、监事、高级管理人员的诚信信息的;(三)发行人、上市公司申请查询拟参与本公司并购、重组的公民、法人或其他组织的诚信信息的;(四)发行人、上市公司申请查询拟委托的证券公司、证券服务机构及其相关从业人员的诚信信息的;(五)证券公司、证券服务机构申请查询其所提供专业服务的发行人、上市公司及其董事、监事、高级管理人员、控股股东和实际控制人的诚信信息的;(六)证券公司、基金管理公司、期货公司、证券期货服务机构申请查询已聘任或拟聘任的董事、监事、高级管理人员或其他从业人员的诚信信息的;(七)中国证监会规定的其他条件。\n\n7.申请查询诚信信息应提供哪些资料?多长时间可以得到反馈?《办法》第十七条规定，公民、法人或其他组织提出诚信信息查询申请，应当提供如下材料：(一)查询申请书;(二)身份证明文件;(三)办理本办法第十六条第(二)项至第(六)项查询申请的，查询申请书应经查询对象签字或盖章同意，或有查询对象的其他书面同意文件。\n\n第十八条规定，公民、法人或其他组织提出的查询申请，符合条件、材料齐备的，中国证监会及其派出机构应当自收到查询申请之日起5个工作日内反馈。\n\n8.哪些诚信信息不能查询?《办法》第十九条规定，公民、法人或其他组织申请查询的诚信信息属于国家秘密，其他公民、法人或其他组织的商业秘密及个人隐私的，中国证监会及其派出机构不予查询，但应当在答复中说明。\n\n9.查询诚信信息收取费用吗?《办法》第四十一条规定，中国证监会及其派出机构办理诚信信息查询，除可以收取打印、复制、装订、邮寄成本费用外，不得收取其他费用。\n\n10.诚信信息在使用上有哪些限制?非法获取、使用、泄露诚信信息应承担怎样的责任?《办法》第二十一条规定，公民、法人或其他组织通过查询获取诚信信息的，不得泄露或提供他人使用，不得进行以营利为目的的使用、加工或处理，不得用于其他非法目的。\n\n第四十条规定，公民、法人或其他组织违反本办法规定获取、使用、泄露诚信信息的，中国证监会及其派出机构可以采取责令改正、监管谈话、出具警示函等监督管理措施;情节严重的，依法追究法律责任。\n\n11.诚信信息可以更正吗?《办法》第十二条规定，记入诚信档案的诚信信息所对应的决定或者行为经法定程序撤销、变更的，中国证监会及其派出机构将相应删除、修改该诚信信息。\n\n第二十条规定，记入诚信档案的公民、法人或其他组织，认为其诚信信息具有本办法第十二条规定的应予删除、修改情形的，或者具有其他重大、明显错误的，可以向中国证监会及其派出机构申请更正。\n\n中国证监会及其派出机构收到公民、法人或其他组织的信息更正申请后，应当在15个工作日内进行处理，并将处理结果告知申请人。\n\n确有本办法第十二条规定的应予删除、修改情形的，或者其他重大、明显错误情形的，应予更正。\n\n浙江证监局法制工作处负责办理浙江辖区市场主体提出的诚信信息更正申请。",
     "source": "浙江证监局",
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103940/c1577651/content.shtml"
+  },
+  {
+    "party": "广州银闰投资顾问有限公司",
+    "party_type": "机构",
+    "position": "",
+    "agency": "广东证监局",
+    "date": "2015-06-24",
+    "case_no": "2014〔2014〕117号",
+    "penalty": "出具警示函",
+    "severity": "一般",
+    "severity_score": 2,
+    "tags": [
+      "公司治理与登记备案/登记备案"
+    ],
+    "categories": [
+      "公司治理与登记备案"
+    ],
+    "violations": [
+      "你公司存在以下行为：\n你公司\n作为投资顾问管理的私募基金产品2014年10月均已清盘，公司股权结构、实际控制人、高级管理人员等情况在2015年3月发生重大变化，但你公司未及时向中国证券投资基金业协会报告上述重大变化事项并更新备案信息",
+      "该行为违反了\n《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《暂行办法》）\n第二十五条等\n相关规定"
+    ],
+    "defense": [],
+    "laws": [
+      "《关于在证券期货行业开展“两个加强、两个遏制”专项检查工作的通知》",
+      "《私募投资基金监督管理暂行办法》第三十三条"
+    ],
+    "content_preview": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔201\n5\n〕\n14\n号\n关于对\n广州银闰投资顾问有限公司\n采取\n出具警示函措施的决定\n广州银闰投资顾问有限公司：\n根据\n中国\n证监会《关于在证券期货行业开展“两个加强、两个遏制”专项检查工作的通知》（证监发〔2014〕117号）\n的\n工作部署，\n我局于2015年4月对你公司进行了现场检查。\n经查，你公司存在以下行为：\n你公司\n作为投资顾问管理的私募基金产品2014年10月均已清盘，公司股权结构、实际控制人、高级管理人员等情况在2015年3月发生重大变化，但你公司未及时向中国证券投资基金业协会报告上述重大变化事项并更新备案信息。\n该行为违反了\n《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《暂行办法》）\n第二十五条等\n相关规定。\n根据《暂行办法》第三十三条的规定，\n我局决定对你公司采取出具警示函的行政监管措施。\n你公司应认真吸取教\n训，加强内部管理，严格履行诚信义务，杜绝以上问题再次发生。\n如果对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n5\n年\n6\n月\n18\n日",
+    "content_text": "中国证券监督管理委员会广东监管局行政监管措施决定书\n〔201\n5\n〕\n14\n号\n关于对\n广州银闰投资顾问有限公司\n采取\n出具警示函措施的决定\n广州银闰投资顾问有限公司：\n根据\n中国\n证监会《关于在证券期货行业开展“两个加强、两个遏制”专项检查工作的通知》（证监发〔2014〕117号）\n的\n工作部署，\n我局于2015年4月对你公司进行了现场检查。\n经查，你公司存在以下行为：\n你公司\n作为投资顾问管理的私募基金产品2014年10月均已清盘，公司股权结构、实际控制人、高级管理人员等情况在2015年3月发生重大变化，但你公司未及时向中国证券投资基金业协会报告上述重大变化事项并更新备案信息。\n该行为违反了\n《私募投资基金监督管理暂行办法》（证监会令第105号，以下简称《暂行办法》）\n第二十五条等\n相关规定。\n根据《暂行办法》第三十三条的规定，\n我局决定对你公司采取出具警示函的行政监管措施。\n你公司应认真吸取教\n训，加强内部管理，严格履行诚信义务，杜绝以上问题再次发生。\n如果对本监督管理措施不服的，可以在收到本决定书之日起10日内向中国证券监督管理委员会提出申诉意见。\n广东证监局\n201\n5\n年\n6\n月\n18\n日",
+    "source": "广东证监局",
+    "source_url": "https://www.csrc.gov.cn/guangdong/c104548/c1383425/content.shtml"
   },
   {
     "party": "渤海银行股份有限公司杭州分行",
