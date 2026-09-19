@@ -26,7 +26,7 @@ import os
 ZJ_BASE = '/Users/yan/Desktop/for_claude/workspace/zj-csrc-data'
 OUT_BASE = '/Users/yan/Desktop/for_claude/workspace/cn-law-hub/docs/data'
 
-BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局', '湖南证监局']
+BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局', '湖南证监局', '厦门证监局', '安徽证监局', '河南证监局', '天津证监局', '重庆证监局', '吉林证监局', '海南证监局', '宁波证监局', '新疆证监局', '陕西证监局', '贵州证监局', '黑龙江证监局', '青岛证监局', '河北证监局', '山西证监局', '广西证监局', '大连证监局', '江西证监局', '辽宁证监局', '西藏证监局', '内蒙古证监局', '甘肃证监局', '云南证监局', '宁夏证监局', '青海证监局']
 DATA_DIRS = {
     '浙江证监局': 'zj_csrc_data',
     '北京证监局': 'bj_csrc_data',
@@ -39,6 +39,31 @@ DATA_DIRS = {
     '山东证监局': 'shandong_csrc_data',
     '湖北证监局': 'hubei_csrc_data',
     '湖南证监局': 'hunan_csrc_data',
+    '厦门证监局': 'xiamen_csrc_data',
+    '安徽证监局': 'anhui_csrc_data',
+    '河南证监局': 'henan_csrc_data',
+    '天津证监局': 'tianjin_csrc_data',
+    '重庆证监局': 'chongqing_csrc_data',
+    '吉林证监局': 'jilin_csrc_data',
+    '海南证监局': 'hainan_csrc_data',
+    '宁波证监局': 'ningbo_csrc_data',
+    '新疆证监局': 'xinjiang_csrc_data',
+    '陕西证监局': 'shaanxi_csrc_data',
+    '贵州证监局': 'guizhou_csrc_data',
+    '黑龙江证监局': 'heilongjiang_csrc_data',
+    '青岛证监局': 'qingdao_csrc_data',
+    '河北证监局': 'hebei_csrc_data',
+    '山西证监局': 'shanxi_csrc_data',
+    '广西证监局': 'guangxi_csrc_data',
+    '大连证监局': 'dalian_csrc_data',
+    '江西证监局': 'jiangxi_csrc_data',
+    '辽宁证监局': 'liaoning_csrc_data',
+    '西藏证监局': 'xizang_csrc_data',
+    '内蒙古证监局': 'neimenggu_csrc_data',
+    '甘肃证监局': 'gansu_csrc_data',
+    '云南证监局': 'yunnan_csrc_data',
+    '宁夏证监局': 'ningxia_csrc_data',
+    '青海证监局': 'qinghai_csrc_data',
 }
 
 # ============ 二级分类体系（6 一级 × 26 二级）============
