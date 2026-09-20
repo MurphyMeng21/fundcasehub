@@ -190,6 +190,11 @@ def main():
     with open(all_path, encoding='utf-8') as f:
         all_cases = json.load(f)
 
+    # 1.5 统一当事人类型：'人员'（中基协受处分人员）→ '自然人'
+    for x in all_cases:
+        if x.get('party_type') == '人员':
+            x['party_type'] = '自然人'
+
     # 已有记录的去重键（source_url = detail_url）
     existing_urls = {x.get('source_url', '') for x in all_cases}
 
