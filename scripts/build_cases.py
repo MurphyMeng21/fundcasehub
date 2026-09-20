@@ -28,9 +28,9 @@ OUT_BASE = '/Users/yan/Desktop/for_claude/workspace/cn-law-hub/docs/data'
 
 BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局', '湖南证监局', '厦门证监局', '安徽证监局', '河南证监局', '天津证监局', '重庆证监局', '吉林证监局', '海南证监局', '宁波证监局', '新疆证监局', '陕西证监局', '贵州证监局', '黑龙江证监局', '青岛证监局', '河北证监局', '山西证监局', '广西证监局', '大连证监局', '江西证监局', '辽宁证监局', '西藏证监局', '内蒙古证监局', '甘肃证监局', '云南证监局', '宁夏证监局', '青海证监局']
 DATA_DIRS = {
-    '浙江证监局': 'zj_csrc_data',
-    '北京证监局': 'bj_csrc_data',
-    '上海证监局': 'sh_csrc_data',
+    '浙江证监局': 'zhejiang_csrc_data',
+    '北京证监局': 'beijing_csrc_data',
+    '上海证监局': 'shanghai_csrc_data',
     '深圳证监局': 'shenzhen_csrc_data',
     '江苏证监局': 'jiangsu_csrc_data',
     '广东证监局': 'guangdong_csrc_data',
