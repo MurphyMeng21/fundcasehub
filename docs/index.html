@@ -529,7 +529,7 @@ function doCaseSearch() {
 function renderCaseList(cases) {
   const content = $('#content-cases'); content.innerHTML = '';
   if (!cases.length) { content.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><h3>未找到匹配的案例</h3><div>请调整或清空筛选条件</div></div>'; return; }
-  const list = document.createElement('div'); list.className = 'case-list'; content.appendChild(list);
+  const list = document.createElement('div'); list.className = 'list-container case-list'; content.appendChild(list);
   const detail = document.createElement('div'); detail.className = 'detail-container'; content.appendChild(detail);
   for (const c of cases) {
     const row = document.createElement('div'); row.className = 'case-row'; row.dataset.id = c.id;
