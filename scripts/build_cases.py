@@ -152,6 +152,32 @@ def strip_metadata(text):
     return text
 
 
+def format_csrc_content(text):
+    """证监局正文段落分层：在逻辑段落边界插入空行。"""
+    if not text:
+        return text
+    text = text.replace('\n经查', '\n\n经查')
+    text = text.replace('\n上述行为', '\n\n上述行为')
+    text = text.replace('\n如果对本', '\n\n如果对本')
+    # 落款（XX证监局 + 日期）前加空行
+    text = re.sub(r'\n([^\n]{0,12}证监局\n\d{4}年\d{1,2}月\d{1,2}日)', r'\n\n\1', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
+
+
+def format_amac_content(text):
+    """中基协 OCR 正文：去中文间空格 + 按章节标记分段。"""
+    if not text:
+        return text
+    # 去中文相邻字之间的空格（OCR 把 PDF 行尾换行转成空格）
+    text = re.sub(r'(?<=[一-龥])\s+(?=[一-龥])', '', text)
+    # 按章节标记分段（marker 前非换行时才加空行，幂等）
+    for marker in ['一、基本事实', '二、申辩意见', '三、审理意见']:
+        text = re.sub(r'(?<!\n)' + marker, '\n\n' + marker, text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
+
+
 def fund_case_to_all(fc, agency):
     """一条 fund_cases.json 记录 → cases_all.json 记录。"""
     content = strip_metadata(fc.get('content_text', '') or '')
@@ -160,6 +186,7 @@ def fund_case_to_all(fc, agency):
     content = re.sub(r'【字号[：:][^】]*】', '', content)
     content = re.sub(r'分享到[：:].*?(?=【字号|$)', '', content, flags=re.DOTALL)
     content = re.sub(r'\n{3,}', '\n\n', content).strip()
+    content = format_csrc_content(content)
     violations = fc.get('violations', []) or []
     tags = classify_tags(content, ' '.join(violations))
     return {
@@ -194,6 +221,20 @@ def main():
     for x in all_cases:
         if x.get('party_type') == '人员':
             x['party_type'] = '自然人'
+
+    # 1.6 中基协 OCR 正文排版：去空格 + 按章节分段
+    for x in all_cases:
+        if '中基协' in x.get('agency', ''):
+            ct = format_amac_content(x.get('content_text', '') or '')
+            x['content_text'] = ct
+            x['content_preview'] = ct[:3000]
+
+    # 1.7 证监局正文段落分层（对保留的历史数据也处理）
+    for x in all_cases:
+        if '证监局' in x.get('agency', ''):
+            ct = format_csrc_content(x.get('content_text', '') or '')
+            x['content_text'] = ct
+            x['content_preview'] = ct[:3000]
 
     # 已有记录的去重键（source_url = detail_url）
     existing_urls = {x.get('source_url', '') for x in all_cases}
