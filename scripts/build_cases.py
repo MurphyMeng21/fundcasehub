@@ -153,16 +153,43 @@ def strip_metadata(text):
 
 
 def format_csrc_content(text):
-    """证监局正文段落分层：在逻辑段落边界插入空行。"""
+    """证监局正文排版：碎片重排（合并碎行/单独成行的数字）+ 逻辑段落分层。"""
     if not text:
         return text
-    text = text.replace('\n经查', '\n\n经查')
-    text = text.replace('\n上述行为', '\n\n上述行为')
-    text = text.replace('\n如果对本', '\n\n如果对本')
-    # 落款（XX证监局 + 日期）前加空行
-    text = re.sub(r'\n([^\n]{0,12}证监局\n\d{4}年\d{1,2}月\d{1,2}日)', r'\n\n\1', text)
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    return text.strip()
+    # 1. 日期碎片合并（"2026\n年\n9\n月\n15\n日" → "2026年9月15日"）
+    text = re.sub(r'(\d{4})\n年\n(\d{1,2})\n月\n(\d{1,2})\n日', r'\1年\2月\3日', text)
+    # 2. 合并单独成行的数字（"之日起\n7\n日内" → "之日起7日内"）
+    text = re.sub(r'(?<=[一-龥])\n(\d{1,3})\n(?=[一-龥])', r'\1', text)
+    # 2. 碎片行合并：非逻辑段落边界、非列举项的行，合并到前一行
+    boundary_prefixes = ('经查', '我局', '上述行为', '你作为', '你应当', '如果对本', '根据', '你公司应')
+    lines = text.split('\n')
+    paras = []
+    for line in lines:
+        ls = line.strip()
+        if not ls:
+            continue
+        is_para = (
+            ls.endswith('：') or ls.endswith(':') or
+            any(ls.startswith(p) for p in boundary_prefixes) or
+            re.match(r'^[一-龥]{2,8}证监局$', ls) or
+            re.match(r'^\d{4}年\d{1,2}月\d{1,2}日$', ls)
+        )
+        is_list_item = re.match(r'^[一二三四五六七八九十]+、', ls)
+        if is_para or not paras:
+            paras.append(ls)
+        elif is_list_item:
+            paras[-1] += '\n' + ls
+        else:
+            paras[-1] += ls
+    text = '\n\n'.join(paras).strip()
+    # 3. 落款处理
+    #    a. 拆开连在一起的「证监局日期」
+    text = re.sub(r'(证监局)(\d{4}年\d{1,2}月\d{1,2}日)', r'\1\n\2', text)
+    #    b. 空行分隔的「证监局\n\n日期」→ 单换行
+    text = re.sub(r'(证监局)\n\n(\d{4}年\d{1,2}月\d{1,2}日)', r'\1\n\2', text)
+    #    c. 落款独立成段：正文（句号/分号结尾）与落款之间加空行
+    text = re.sub(r'([。；])([一-龥]{2,8}证监局\n\d{4}年\d{1,2}月\d{1,2}日)', r'\1\n\n\2', text)
+    return text
 
 
 def format_amac_content(text):
