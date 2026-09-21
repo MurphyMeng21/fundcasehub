@@ -1,9 +1,0 @@
-requests>=2.25.0
-urllib3>=1.26.0
-beautifulsoup4>=4.10.0
-cryptography>=3.0
-
-# Optional: for old .doc format support, install system tools:
-#   apt-get install antiword catdoc   (Linux)
-#   brew install antiword catdoc      (macOS)
-# python-docx is not required (pure stdlib ZIP+XML parsing for .docx)

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FundLawHub — 法律法规与案例检索</title>
+<title>FundCaseHub — 基金处罚案例库</title>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -157,23 +157,7 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 <body>
 <div id="app">
   <div id="tab-bar">
-    <button class="tab-btn active" data-module="laws">📚 法律法规</button>
-    <button class="tab-btn" data-module="cases">⚖️ 案例库</button>
-  </div>
-
-  <!-- LAW MODULE -->
-  <div id="module-laws" class="module active">
-    <header id="header">
-      <button class="menu-btn" data-sidebar="sidebar">☰</button>
-      <h1>法律法规<span style="color:var(--c-accent)">检索</span></h1>
-      <div id="search-wrap"><input type="text" id="search-input" placeholder="搜索法规标题、全文、发布机构..."><button class="search-clear" id="search-clear">✕</button></div>
-      <div class="header-stats">共 <strong id="total-count">0</strong> 部</div>
-    </header>
-    <div id="main-layout">
-      <div class="overlay" data-sidebar="sidebar"></div>
-      <aside class="sidebar" id="sidebar"></aside>
-      <main id="content"><div class="loading-wrap"><div class="spinner"></div><div>加载法规数据...</div></div></main>
-    </div>
+    <button class="tab-btn active" data-module="cases">⚖️ 案例库</button>
   </div>
 
   <!-- CASE MODULE -->
@@ -192,7 +176,7 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 // ===== SHELL =====
 const $ = (s,d=document) => d.querySelector(s);
 const $$ = (s,d=document) => d.querySelectorAll(s);
-let currentModule = 'laws';
+let currentModule = 'cases';
 
 $$('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -200,25 +184,9 @@ $$('.tab-btn').forEach(btn => {
     currentModule = btn.dataset.module;
     $$('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
     $$('.module').forEach(m => m.classList.toggle('active', m.id === `module-${currentModule}`));
-    if (currentModule === 'cases' && !window._casesLoaded) initCaseModule();
-    if (currentModule === 'laws' && !window._lawsLoaded) initLawModule();
   });
 });
 
-// Mobile sidebar
-document.addEventListener('click', e => {
-  const menuBtn = e.target.closest('.menu-btn');
-  const overlay = e.target.closest('.overlay');
-  if (menuBtn) {
-    const sid = document.getElementById(menuBtn.dataset.sidebar);
-    const ovl = document.querySelector(`.overlay[data-sidebar="${menuBtn.dataset.sidebar}"]`);
-    sid.classList.toggle('open'); ovl.classList.toggle('open');
-  }
-  if (overlay) {
-    const sid = document.getElementById(overlay.dataset.sidebar);
-    sid.classList.remove('open'); overlay.classList.remove('open');
-  }
-});
 
 // ===== UTILS =====
 function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
@@ -234,82 +202,6 @@ function htm(s, q) {
     }
   }
   return h;
-}
-
-// ===== LAW MODULE =====
-window._lawsLoaded = false;
-function initLawModule() { if (!window._lawsLoaded) { window._lawsLoaded = true; loadLawModule(); } }
-
-const lawState = { laws: [], filtered: [], activeCat: 'all', query: '', fuse: null, expandedId: null };
-const CAT_DISPLAY = {'基金运作':'基金运作与监管','证券交易':'证券交易合规','反洗钱':'反洗钱与CRS','广告竞争':'广告与市场竞争','税务':'税务','劳动':'劳动人事','跨境':'跨境业务','基础法律':'基础法律与知识产权','量化交易':'程序化/量化交易与异常交易监控'};
-const CAT_ORDER = ['基金运作','证券交易','反洗钱','广告竞争','税务','劳动','跨境','基础法律','量化交易'];
-
-async function loadLawModule() {
-  const content = $('#content');
-  try {
-    const r = await fetch('data/laws.json');
-    lawState.laws = await r.json();
-    lawState.filtered = [...lawState.laws];
-    lawState.fuse = new Fuse(lawState.laws, {
-      keys: [{name:'title',weight:0.5},{name:'authority',weight:0.15},{name:'full_text',weight:0.25},{name:'level',weight:0.05}],
-      threshold: 0.35, distance: 100, minMatchCharLength: 1, includeScore: true, includeMatches: true, ignoreLocation: true, ignoreFieldNorm: true
-    });
-    renderLawSidebar(); renderLawList(lawState.laws); bindLawEvents();
-    $('#total-count').textContent = lawState.laws.length;
-  } catch(e) { content.innerHTML = `<div class="empty-state"><div class="icon">❌</div><h3>数据加载失败</h3><div>${esc(e.message)}</div></div>`; }
-}
-
-function renderLawSidebar() {
-  const counts = {'all': lawState.laws.length};
-  for (const l of lawState.laws) for (const c of (l.categories||[])) counts[c] = (counts[c]||0) + 1;
-  let h = '<div class="sidebar-section"><div class="sidebar-title">板块分类</div>';
-  h += `<div class="filter-item${lawState.activeCat==='all'?' active':''}" data-cat="all"><span class="filter-name">全部法规</span><span class="filter-count">${counts.all||0}</span></div>`;
-  for (const cat of CAT_ORDER) { if (!counts[cat]) continue;
-    h += `<div class="filter-item${lawState.activeCat===cat?' active':''}" data-cat="${cat}"><span class="filter-name">${CAT_DISPLAY[cat]||cat}</span><span class="filter-count">${counts[cat]}</span></div>`; }
-  h += '</div>'; $('#sidebar').innerHTML = h;
-  $$('.filter-item', $('#sidebar')).forEach(el => el.addEventListener('click', () => {
-    lawState.activeCat = el.dataset.cat; lawState.expandedId = null;
-    const dc = $('#content .detail-container'); if (dc) { dc.classList.remove('active'); dc.innerHTML=''; }
-    const lc = $('#content .list-container'); if (lc) lc.style.display = '';
-    doLawSearch(); renderLawSidebar();
-  }));
-}
-
-function doLawSearch() {
-  let results;
-  if (lawState.query.trim()) { const fr = lawState.fuse.search(lawState.query.trim()); results = fr.map(r => r.item); }
-  else results = [...lawState.laws];
-  if (lawState.activeCat !== 'all') results = results.filter(l => (l.categories||[]).includes(lawState.activeCat));
-  lawState.filtered = results; renderLawList(results); $('#total-count').textContent = results.length;
-}
-
-function renderLawList(laws) {
-  const content = $('#content'); content.innerHTML = '';
-  if (!laws.length) { content.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><h3>未找到匹配的法规</h3><div>请调整搜索条件</div></div>'; return; }
-  const list = document.createElement('div'); list.className = 'list-container'; content.appendChild(list);
-  const detail = document.createElement('div'); detail.className = 'detail-container'; content.appendChild(detail);
-  for (const law of laws) {
-    const card = document.createElement('div'); card.className = 'card'; card.dataset.id = law.id;
-    const pub = law.publish_date || '—', eff = law.effective_date || '—';
-    card.innerHTML = `<div class="card-header"><div class="card-title">${esc(law.title)}</div><span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(law.level||'')}</span></div><div class="card-meta"><span>${esc(law.authority||'')}</span><span>|</span><span>发布 ${pub}</span>${law.effective_date ? `<span>|</span><span>施行 ${eff}</span>` : ''}</div>${law.full_text_preview ? `<div class="card-preview">${esc(trunc(law.full_text_preview, 200))}</div>` : ''}`;
-    card.addEventListener('click', () => showLawDetail(law)); list.appendChild(card);
-  }
-}
-
-function showLawDetail(law) {
-  const list = $('#content .list-container'), detail = $('#content .detail-container');
-  list.style.display = 'none'; detail.classList.add('active'); detail.innerHTML = ''; lawState.expandedId = law.id;
-  const pub = law.publish_date || '—', eff = law.effective_date || '施行日期暂缺';
-  const sc = law.status_str === '现行有效' ? 'sev-较轻' : law.status_str === '已废止' ? 'sev-严重' : 'sev-较重';
-  detail.innerHTML = `<button class="detail-back">← 返回列表</button><div class="detail-title">${esc(law.title)}</div><div class="detail-meta">${law.level ? `<span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(law.level)}</span>` : ''}<span class="badge ${sc}">${esc(law.status_str||'—')}</span>${law.authority ? `<span>发布机构：${esc(law.authority)}</span>` : ''}<span>发布日期：${pub}</span><span>施行日期：${eff}</span></div>${law.full_text_error ? '<div class="detail-warning">⚠️ 原文加载异常</div>' : ''}<div class="detail-text">${htm(law.full_text, lawState.query)}</div>`;
-  detail.querySelector('.detail-back').addEventListener('click', () => { detail.classList.remove('active'); detail.innerHTML=''; list.style.display=''; lawState.expandedId=null; });
-  $('#content').scrollTop = 0;
-}
-
-function bindLawEvents() {
-  const si = $('#search-input'), sc = $('#search-clear'); let timer;
-  si.addEventListener('input', () => { lawState.query = si.value; clearTimeout(timer); timer = setTimeout(() => { doLawSearch(); if (lawState.expandedId) { const dc=$('#content .detail-container'); if(dc){dc.classList.remove('active');dc.innerHTML='';} const lc=$('#content .list-container'); if(lc)lc.style.display=''; lawState.expandedId=null; } }, 250); sc.classList.toggle('visible', lawState.query.length > 0); });
-  sc.addEventListener('click', () => { si.value=''; lawState.query=''; sc.classList.remove('visible'); doLawSearch(); si.focus(); });
 }
 
 // ===== CASE MODULE =====
@@ -618,7 +510,7 @@ function bindCaseEvents() {
 }
 
 // Init
-initLawModule();
+initCaseModule();
 window.addEventListener('resize', () => { const mobile = window.innerWidth <= 768; $$('.menu-btn').forEach(b => b.style.display = mobile ? 'block' : 'none'); $$('#header-cases .menu-btn').forEach(b => b.style.display = mobile ? 'block' : 'none'); });
 </script>
 </body>
