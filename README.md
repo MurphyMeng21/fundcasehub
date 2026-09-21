@@ -12,13 +12,6 @@
 | `cases_all.json` | 全量（含正文全文） |
 | `cases_full.json` | `{id: 全文}` 映射（详情懒加载） |
 
-## 本地预览
-
-```bash
-cd docs && python3 -m http.server 8899
-# 浏览器 http://localhost:8899
-```
-
 ## 更新机制
 
 - 数据由 `../zj-csrc-data/update_cases.py` 定期（周度）更新：爬取 36 局新增 → 筛选基金案例 → 集成。
