@@ -213,8 +213,18 @@ const caseState = { cases: [], filtered: [], activeTags: [], activePartyType: 'a
 // 常用违规类型（高频二级标签，放前面）；其余收进「全部类型」面板
 const HOT_TAGS = ['勤勉义务','销售违规','合格投资者','人员场所','登记备案','信息披露','挪用侵占','内控合规'];
 
+// 省局管辖范围标注：计划单列市有独立证监局，省局名后标注「不含XX」
+const SRC_SCOPE = {
+  '广东证监局': '广东证监局（不含深圳）',
+  '浙江证监局': '浙江证监局（不含宁波）',
+  '山东证监局': '山东证监局（不含青岛）',
+  '辽宁证监局': '辽宁证监局（不含大连）',
+  '福建证监局': '福建证监局（不含厦门）',
+};
+
 function shortSrc(s) {
   if (!s) return '其他';
+  if (SRC_SCOPE[s]) return SRC_SCOPE[s];
   if (s.includes('中基协')) return '中基协';
   if (s.includes('上海证券')) return '上交所';
   if (s.includes('北京证券')) return '北交所';
@@ -445,7 +455,7 @@ function showCaseDetail(c) {
     <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:14px">
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2);white-space:nowrap;width:80px">处罚机构</td><td style="padding:6px 0">${esc(c.agency||'—')}</td></tr>
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">被处罚对象</td><td style="padding:6px 0"><strong>${esc(c.party||c.name)}</strong> <span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(c.party_type||'')}</span>${c.position ? `<span style="color:var(--c-text2);margin-left:8px">${esc(c.position)}</span>` : ''}</td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">来源</td><td style="padding:6px 0"><span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(c.source||'')}</span></td></tr>
+      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">来源</td><td style="padding:6px 0"><span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(shortSrc(c.source||''))}</span></td></tr>
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">时间</td><td style="padding:6px 0">${esc(c.date)}${c.case_no ? ' &nbsp;|&nbsp; 文号：'+esc(c.case_no) : ''}</td></tr>
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">监管措施</td><td style="padding:6px 0"><span class="badge sev-${c.severity}">${esc(c.severity)}</span> <strong style="color:var(--c-red)">${esc(c.penalty)}</strong></td></tr>
     </table>`;
