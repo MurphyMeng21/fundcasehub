@@ -208,7 +208,7 @@ function htm(s, q) {
 window._casesLoaded = false;
 function initCaseModule() { if (!window._casesLoaded) { window._casesLoaded = true; loadCaseModule(); } }
 
-const caseState = { cases: [], filtered: [], activeTags: [], activePartyType: 'all', activeSrcs: [], activeSev: 'all', query: '', fuse: null, expandedId: null, fullTexts: {} };
+const caseState = { cases: [], filtered: [], activeTags: [], activePartyType: 'all', activeSrcs: [], activeSev: 'all', activePenaltyType: 'all', query: '', fuse: null, expandedId: null, fullTexts: {} };
 
 // 常用违规类型（高频二级标签，放前面）；其余收进「全部类型」面板
 const HOT_TAGS = ['勤勉义务','销售违规','合格投资者','人员场所','登记备案','信息披露','挪用侵占','内控合规'];
@@ -284,8 +284,14 @@ function renderCaseFilterBar() {
   h += '<button class="chip" data-action="toggle-types">全部类型 ▾</button>';
   h += '</div>';
 
-  // 行2：当事人类型 + 来源机构 + 处分级别
+  // 行2：处罚类型 + 当事人类型 + 来源机构 + 处分级别
   h += '<div class="filter-row">';
+  h += '<span class="filter-label">处罚类型</span><div class="segmented">';
+  for (const pt of ['all','监管措施','行政处罚']) {
+    const label = pt === 'all' ? '全部' : pt;
+    h += `<button class="${caseState.activePenaltyType===pt?'active':''}" data-penalty="${pt}">${label}</button>`;
+  }
+  h += '</div>';
   h += '<span class="filter-label">当事人</span><div class="segmented">';
   for (const pt of ['all','自然人','机构']) {
     const label = pt === 'all' ? '全部' : pt;
@@ -309,6 +315,7 @@ function renderCaseFilterBar() {
   if (caseState.activePartyType !== 'all') chips.push(`<span class="active-chip">当事人:${caseState.activePartyType}<span class="x" data-remove-pt>✕</span></span>`);
   for (const src of caseState.activeSrcs) chips.push(`<span class="active-chip">来源:${shortSrc(src)}<span class="x" data-remove-src="${src}">✕</span></span>`);
   if (caseState.activeSev !== 'all') chips.push(`<span class="active-chip">级别:${caseState.activeSev}<span class="x" data-remove-sev>✕</span></span>`);
+  if (caseState.activePenaltyType !== 'all') chips.push(`<span class="active-chip">处罚:${caseState.activePenaltyType}<span class="x" data-remove-penalty>✕</span></span>`);
   if (chips.length) { h += chips.join(''); h += '<span class="clear-all" data-clear>清空筛选</span>'; }
   h += '</div>';
 
@@ -325,7 +332,9 @@ function bindFilterEvents() {
   const typeBtn = $('#filter-rows .chip[data-action="toggle-types"]');
   if (typeBtn) typeBtn.addEventListener('click', (e) => { e.stopPropagation(); renderTypePopover(); });
   $$('#filter-rows .segmented button').forEach(el => el.addEventListener('click', () => {
-    caseState.activePartyType = el.dataset.pt; resetDetail(); doCaseSearch(); renderCaseFilterBar();
+    if (el.dataset.penalty !== undefined) caseState.activePenaltyType = el.dataset.penalty;
+    else if (el.dataset.pt !== undefined) caseState.activePartyType = el.dataset.pt;
+    resetDetail(); doCaseSearch(); renderCaseFilterBar();
   }));
   const srcToggle = $('#src-toggle');
   if (srcToggle) srcToggle.addEventListener('click', (e) => { e.stopPropagation(); renderSrcPopover(); });
@@ -336,10 +345,11 @@ function bindFilterEvents() {
     if (el.dataset.removePt !== undefined) caseState.activePartyType = 'all';
     if (el.dataset.removeSrc !== undefined) { const i = caseState.activeSrcs.indexOf(el.dataset.removeSrc); if (i>=0) caseState.activeSrcs.splice(i,1); }
     if (el.dataset.removeSev !== undefined) caseState.activeSev = 'all';
+    if (el.dataset.removePenalty !== undefined) caseState.activePenaltyType = 'all';
     resetDetail(); doCaseSearch(); renderCaseFilterBar();
   }));
   const clear = $('#filter-rows .clear-all');
-  if (clear) clear.addEventListener('click', () => { caseState.activeTags = []; caseState.activePartyType = 'all'; caseState.activeSrcs = []; caseState.activeSev = 'all'; resetDetail(); doCaseSearch(); renderCaseFilterBar(); });
+  if (clear) clear.addEventListener('click', () => { caseState.activeTags = []; caseState.activePartyType = 'all'; caseState.activeSrcs = []; caseState.activeSev = 'all'; caseState.activePenaltyType = 'all'; resetDetail(); doCaseSearch(); renderCaseFilterBar(); });
 }
 
 function renderSrcPopover() {
@@ -416,6 +426,8 @@ function doCaseSearch() {
   else results = [...caseState.cases];
   // 违规类型（多选，满足任一）
   if (caseState.activeTags.length) results = results.filter(c => (c.tags||[]).some(t => caseState.activeTags.includes(t)));
+  // 处罚类型（监管措施/行政处罚）
+  if (caseState.activePenaltyType !== 'all') results = results.filter(c => (c.penalty_type || '监管措施') === caseState.activePenaltyType);
   // 当事人类型
   if (caseState.activePartyType !== 'all') results = results.filter(c => c.party_type === caseState.activePartyType);
   // 来源机构（多选，满足任一）
@@ -438,10 +450,11 @@ function renderCaseList(cases) {
     const pt = c.party_type || '';
     const ptBadge = pt ? `<span class="pt-badge pt-${pt}">${esc(pt)}</span>` : '';
     const pos = c.position ? `<span class="pos">${esc(c.position)}</span>` : '';
+    const xzcfBadge = c.penalty_type === '行政处罚' ? `<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>` : '';
     const tags = (c.tags||[]).slice(0,4).map(tag => `<span class="tg">${esc(tag.split('/').pop())}</span>`).join('');
     const sevBadge = c.severity ? `<span class="badge sev-${c.severity}" style="font-size:11px">${esc(c.severity)}</span>` : '';
     const meta = [shortSrc(c.source), c.date, c.case_no].filter(Boolean).join(' · ');
-    row.innerHTML = `${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${pos}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty, 50))}</span>` : ''}</div><div class="case-meta">${esc(meta)} ${sevBadge}</div></div>`;
+    row.innerHTML = `${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${pos}${xzcfBadge}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty, 50))}</span>` : ''}</div><div class="case-meta">${esc(meta)} ${sevBadge}</div></div>`;
     row.addEventListener('click', () => showCaseDetail(c)); list.appendChild(row);
   }
 }
@@ -457,7 +470,7 @@ function showCaseDetail(c) {
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">被处罚对象</td><td style="padding:6px 0"><strong>${esc(c.party||c.name)}</strong> <span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(c.party_type||'')}</span>${c.position ? `<span style="color:var(--c-text2);margin-left:8px">${esc(c.position)}</span>` : ''}</td></tr>
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">来源</td><td style="padding:6px 0"><span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(shortSrc(c.source||''))}</span></td></tr>
       <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">时间</td><td style="padding:6px 0">${esc(c.date)}${c.case_no ? ' &nbsp;|&nbsp; 文号：'+esc(c.case_no) : ''}</td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">监管措施</td><td style="padding:6px 0"><span class="badge sev-${c.severity}">${esc(c.severity)}</span> <strong style="color:var(--c-red)">${esc(c.penalty)}</strong></td></tr>
+      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">处罚类型</td><td style="padding:6px 0"><span class="badge sev-${c.severity}">${esc(c.severity)}</span> <strong style="color:var(--c-red)">${esc(c.penalty)}</strong><span class="badge" style="margin-left:6px;background:${c.penalty_type==='行政处罚'?'var(--c-red)':'var(--c-accent-light)'};color:${c.penalty_type==='行政处罚'?'#fff':'var(--c-accent)'}">${esc(c.penalty_type || '监管措施')}</span></td></tr>
     </table>`;
 
   // Violations

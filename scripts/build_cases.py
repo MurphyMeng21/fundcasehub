@@ -235,6 +235,7 @@ def fund_case_to_all(fc, agency):
         'content_text': content,
         'source': agency,
         'source_url': fc.get('detail_url', ''),
+        'penalty_type': fc.get('penalty_type', '监管措施'),
     }
 
 
@@ -313,6 +314,7 @@ def main():
             'content_preview': c.get('content_preview', ''),
             'source': c['source'],
             'source_url': c.get('source_url', ''),
+            'penalty_type': c.get('penalty_type', '监管措施'),
         })
         full[cid] = c.get('content_text', '')
 
