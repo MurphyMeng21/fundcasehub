@@ -315,6 +315,7 @@ def main():
             'source': c['source'],
             'source_url': c.get('source_url', ''),
             'penalty_type': c.get('penalty_type', '监管措施'),
+            'business_stage': c.get('business_stage', ''),
         })
         full[cid] = c.get('content_text', '')
 
