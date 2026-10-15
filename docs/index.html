@@ -128,6 +128,7 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 .case-list{display:flex;flex-direction:column;gap:0}
 .case-row{display:flex;align-items:flex-start;gap:12px;padding:11px 20px;border-bottom:1px solid var(--c-border);cursor:pointer;transition:background .12s;background:var(--c-surface)}
 .case-row:hover{background:var(--c-accent-light)}
+.fav-btn{flex-shrink:0;cursor:pointer;font-size:16px;line-height:1;margin-top:2px;user-select:none}
 .pt-badge{flex-shrink:0;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:500;margin-top:2px}
 .pt-自然人{background:var(--c-green-bg);color:var(--c-green)}
 .pt-机构{background:var(--c-accent-light);color:var(--c-accent)}
@@ -157,18 +158,36 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 <body>
 <div id="app">
   <div id="tab-bar">
-    <button class="tab-btn active" data-module="cases">⚖️ 案例库</button>
+    <button class="tab-btn active" data-module="cases">🔍 案例检索</button>
+    <button class="tab-btn" data-module="topics">🗂️ 风险专题</button>
+    <button class="tab-btn" data-module="favs">⭐ 我的收藏</button>
   </div>
 
   <!-- CASE MODULE -->
   <div id="module-cases" class="module active">
     <header id="header-cases" style="height:var(--header-h);background:var(--c-surface);border-bottom:1px solid var(--c-border);display:flex;align-items:center;padding:0 20px;gap:16px;flex-shrink:0">
-      <h1 style="font-size:17px;font-weight:700;white-space:nowrap">案例<span style="color:var(--c-accent)">库</span></h1>
+      <h1 style="font-size:17px;font-weight:700;white-space:nowrap">案例<span style="color:var(--c-accent)">检索</span></h1>
       <div style="flex:1;max-width:520px;position:relative"><input type="text" id="search-input-cases" placeholder="搜索当事人、文号、违规类型、处分结果..."><button class="search-clear" id="search-clear-cases">✕</button></div>
       <div class="header-stats">共 <strong id="total-count-cases">0</strong> 条</div>
     </header>
     <div id="filter-bar"><div id="filter-rows"></div><div id="src-popover"></div></div>
     <main id="content-cases" style="flex:1;overflow-y:auto;padding:0"><div class="loading-wrap"><div class="spinner"></div><div>加载案例数据...</div></div></main>
+  </div>
+
+  <!-- TOPICS MODULE -->
+  <div id="module-topics" class="module">
+    <header style="height:var(--header-h);background:var(--c-surface);border-bottom:1px solid var(--c-border);display:flex;align-items:center;padding:0 20px;flex-shrink:0">
+      <h1 style="font-size:17px;font-weight:700">风险<span style="color:var(--c-accent)">专题</span></h1>
+    </header>
+    <main id="content-topics" style="flex:1;overflow-y:auto;padding:20px"><div class="loading-wrap"><div class="spinner"></div><div>加载中...</div></div></main>
+  </div>
+
+  <!-- FAVORITES MODULE -->
+  <div id="module-favs" class="module">
+    <header style="height:var(--header-h);background:var(--c-surface);border-bottom:1px solid var(--c-border);display:flex;align-items:center;padding:0 20px;flex-shrink:0">
+      <h1 style="font-size:17px;font-weight:700">我的<span style="color:var(--c-accent)">收藏</span></h1>
+    </header>
+    <main id="content-favs" style="flex:1;overflow-y:auto;padding:0"><div class="loading-wrap"><div class="spinner"></div><div>加载中...</div></div></main>
   </div>
 </div>
 
@@ -184,6 +203,8 @@ $$('.tab-btn').forEach(btn => {
     currentModule = btn.dataset.module;
     $$('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
     $$('.module').forEach(m => m.classList.toggle('active', m.id === `module-${currentModule}`));
+    if (currentModule === 'topics') renderTopics();
+    else if (currentModule === 'favs') renderFavs();
   });
 });
 
@@ -208,7 +229,14 @@ function htm(s, q) {
 window._casesLoaded = false;
 function initCaseModule() { if (!window._casesLoaded) { window._casesLoaded = true; loadCaseModule(); } }
 
-const caseState = { cases: [], filtered: [], activeTags: [], activePartyType: 'all', activeSrcs: [], activeSev: 'all', activePenaltyType: 'all', query: '', fuse: null, expandedId: null, fullTexts: {} };
+const caseState = { cases: [], filtered: [], activeTags: [], activePartyType: 'all', activeSrcs: [], activeSev: 'all', activePenaltyType: 'all', activeBusinessStage: 'all', query: '', fuse: null, expandedId: null, fullTexts: {}, favs: [] };
+
+// ===== 收藏（localStorage）=====
+const FAV_KEY = 'fundcasehub-favs';
+function loadFavs() { try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch (e) { return []; } }
+function saveFavs() { try { localStorage.setItem(FAV_KEY, JSON.stringify(caseState.favs)); } catch (e) {} }
+function isFav(id) { return caseState.favs.includes(id); }
+function toggleFav(id) { const i = caseState.favs.indexOf(id); if (i >= 0) caseState.favs.splice(i, 1); else caseState.favs.push(id); saveFavs(); }
 
 // 常用违规类型（高频二级标签，放前面）；其余收进「全部类型」面板
 const HOT_TAGS = ['勤勉义务','销售违规','合格投资者','人员场所','登记备案','信息披露','挪用侵占','内控合规'];
@@ -237,6 +265,7 @@ async function loadCaseModule() {
   try {
     const [r1, r2] = await Promise.all([fetch('data/cases.json'), fetch('data/cases_full.json')]);
     caseState.cases = await r1.json(); caseState.fullTexts = await r2.json(); caseState.filtered = [...caseState.cases];
+    caseState.favs = loadFavs();
     caseState.fuse = new Fuse(caseState.cases, {
       keys: [{name:'party',weight:0.3},{name:'content_preview',weight:0.3},{name:'tags',weight:0.2},{name:'case_no',weight:0.1},{name:'penalty',weight:0.1}],
       threshold: 0.35, distance: 100, minMatchCharLength: 1, includeScore: true, includeMatches: true, ignoreLocation: true, ignoreFieldNorm: true
@@ -292,6 +321,12 @@ function renderCaseFilterBar() {
     h += `<button class="${caseState.activePenaltyType===pt?'active':''}" data-penalty="${pt}">${label}</button>`;
   }
   h += '</div>';
+  h += '<span class="filter-label">业务环节</span><div class="segmented">';
+  for (const bs of ['all','募集推介','投资运作','存续管理','机构治理']) {
+    const label = bs === 'all' ? '全部' : bs;
+    h += `<button class="${caseState.activeBusinessStage===bs?'active':''}" data-stage="${bs}">${label}</button>`;
+  }
+  h += '</div>';
   h += '<span class="filter-label">当事人</span><div class="segmented">';
   for (const pt of ['all','自然人','机构']) {
     const label = pt === 'all' ? '全部' : pt;
@@ -316,6 +351,7 @@ function renderCaseFilterBar() {
   for (const src of caseState.activeSrcs) chips.push(`<span class="active-chip">来源:${shortSrc(src)}<span class="x" data-remove-src="${src}">✕</span></span>`);
   if (caseState.activeSev !== 'all') chips.push(`<span class="active-chip">级别:${caseState.activeSev}<span class="x" data-remove-sev>✕</span></span>`);
   if (caseState.activePenaltyType !== 'all') chips.push(`<span class="active-chip">处罚:${caseState.activePenaltyType}<span class="x" data-remove-penalty>✕</span></span>`);
+  if (caseState.activeBusinessStage !== 'all') chips.push(`<span class="active-chip">环节:${caseState.activeBusinessStage}<span class="x" data-remove-stage>✕</span></span>`);
   if (chips.length) { h += chips.join(''); h += '<span class="clear-all" data-clear>清空筛选</span>'; }
   h += '</div>';
 
@@ -334,6 +370,7 @@ function bindFilterEvents() {
   $$('#filter-rows .segmented button').forEach(el => el.addEventListener('click', () => {
     if (el.dataset.penalty !== undefined) caseState.activePenaltyType = el.dataset.penalty;
     else if (el.dataset.pt !== undefined) caseState.activePartyType = el.dataset.pt;
+    else if (el.dataset.stage !== undefined) caseState.activeBusinessStage = el.dataset.stage;
     resetDetail(); doCaseSearch(); renderCaseFilterBar();
   }));
   const srcToggle = $('#src-toggle');
@@ -346,10 +383,11 @@ function bindFilterEvents() {
     if (el.dataset.removeSrc !== undefined) { const i = caseState.activeSrcs.indexOf(el.dataset.removeSrc); if (i>=0) caseState.activeSrcs.splice(i,1); }
     if (el.dataset.removeSev !== undefined) caseState.activeSev = 'all';
     if (el.dataset.removePenalty !== undefined) caseState.activePenaltyType = 'all';
+    if (el.dataset.removeStage !== undefined) caseState.activeBusinessStage = 'all';
     resetDetail(); doCaseSearch(); renderCaseFilterBar();
   }));
   const clear = $('#filter-rows .clear-all');
-  if (clear) clear.addEventListener('click', () => { caseState.activeTags = []; caseState.activePartyType = 'all'; caseState.activeSrcs = []; caseState.activeSev = 'all'; caseState.activePenaltyType = 'all'; resetDetail(); doCaseSearch(); renderCaseFilterBar(); });
+  if (clear) clear.addEventListener('click', () => { caseState.activeTags = []; caseState.activePartyType = 'all'; caseState.activeSrcs = []; caseState.activeSev = 'all'; caseState.activePenaltyType = 'all'; caseState.activeBusinessStage = 'all'; resetDetail(); doCaseSearch(); renderCaseFilterBar(); });
 }
 
 function renderSrcPopover() {
@@ -428,6 +466,8 @@ function doCaseSearch() {
   if (caseState.activeTags.length) results = results.filter(c => (c.tags||[]).some(t => caseState.activeTags.includes(t)));
   // 处罚类型（监管措施/行政处罚）
   if (caseState.activePenaltyType !== 'all') results = results.filter(c => (c.penalty_type || '监管措施') === caseState.activePenaltyType);
+  // 业务环节
+  if (caseState.activeBusinessStage !== 'all') results = results.filter(c => (c.business_stage || '') === caseState.activeBusinessStage);
   // 当事人类型
   if (caseState.activePartyType !== 'all') results = results.filter(c => c.party_type === caseState.activePartyType);
   // 来源机构（多选，满足任一）
@@ -454,8 +494,11 @@ function renderCaseList(cases) {
     const tags = (c.tags||[]).slice(0,4).map(tag => `<span class="tg">${esc(tag.split('/').pop())}</span>`).join('');
     const sevBadge = c.severity ? `<span class="badge sev-${c.severity}" style="font-size:11px">${esc(c.severity)}</span>` : '';
     const meta = [shortSrc(c.source), c.date, c.case_no].filter(Boolean).join(' · ');
-    row.innerHTML = `${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${pos}${xzcfBadge}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty, 50))}</span>` : ''}</div><div class="case-meta">${esc(meta)} ${sevBadge}</div></div>`;
-    row.addEventListener('click', () => showCaseDetail(c)); list.appendChild(row);
+    row.innerHTML = `<span class="fav-btn" data-fav="${c.id}" title="收藏">${isFav(c.id) ? '⭐' : '☆'}</span>${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${pos}${xzcfBadge}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty, 50))}</span>` : ''}</div><div class="case-meta">${esc(meta)} ${sevBadge}</div></div>`;
+    row.addEventListener('click', () => showCaseDetail(c));
+    const fb = row.querySelector('.fav-btn');
+    fb.addEventListener('click', (e) => { e.stopPropagation(); toggleFav(c.id); fb.textContent = isFav(c.id) ? '⭐' : '☆'; });
+    list.appendChild(row);
   }
 }
 
@@ -463,66 +506,64 @@ function showCaseDetail(c) {
   const list = $('#content-cases .list-container'), detail = $('#content-cases .detail-container');
   list.style.display = 'none'; detail.classList.add('active'); detail.innerHTML = ''; caseState.expandedId = c.id;
   const fullText = caseState.fullTexts[c.id] || '';
+  const isXzcf = c.penalty_type === '行政处罚';
   let html = `<button class="detail-back">← 返回列表</button>
-    <div class="detail-title">${esc(c.party||c.name)}${c.position ? `<span class="badge" style="background:#f0f0f0;color:#666;font-size:12px;margin-left:8px">${esc(c.position)}</span>` : ''}</div>
-    <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:14px">
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2);white-space:nowrap;width:80px">处罚机构</td><td style="padding:6px 0">${esc(c.agency||'—')}</td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">被处罚对象</td><td style="padding:6px 0"><strong>${esc(c.party||c.name)}</strong> <span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(c.party_type||'')}</span>${c.position ? `<span style="color:var(--c-text2);margin-left:8px">${esc(c.position)}</span>` : ''}</td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">来源</td><td style="padding:6px 0"><span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(shortSrc(c.source||''))}</span></td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">时间</td><td style="padding:6px 0">${esc(c.date)}${c.case_no ? ' &nbsp;|&nbsp; 文号：'+esc(c.case_no) : ''}</td></tr>
-      <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">处罚类型</td><td style="padding:6px 0"><span class="badge sev-${c.severity}">${esc(c.severity)}</span> <strong style="color:var(--c-red)">${esc(c.penalty)}</strong><span class="badge" style="margin-left:6px;background:${c.penalty_type==='行政处罚'?'var(--c-red)':'var(--c-accent-light)'};color:${c.penalty_type==='行政处罚'?'#fff':'var(--c-accent)'}">${esc(c.penalty_type || '监管措施')}</span></td></tr>
-    </table>`;
+    <div class="detail-title">${esc(c.party||c.name)}${c.position ? `<span class="badge" style="background:#f0f0f0;color:#666;font-size:12px;margin-left:8px">${esc(c.position)}</span>` : ''} <span class="fav-btn" data-fav="${c.id}" style="cursor:pointer;font-size:16px">${isFav(c.id) ? '⭐' : '☆'}</span></div>`;
 
-  // Violations
+  // ===== ① 事实 =====
+  html += '<div class="detail-section"><h3>📋 事实</h3>';
+  html += `<table style="width:100%;border-collapse:collapse;margin-bottom:12px;font-size:14px">
+    <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2);white-space:nowrap;width:90px">处罚机构</td><td style="padding:6px 0">${esc(c.agency||'—')}</td></tr>
+    <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">被处罚对象</td><td style="padding:6px 0"><strong>${esc(c.party||c.name)}</strong> <span class="badge" style="background:var(--c-accent-light);color:var(--c-accent)">${esc(c.party_type||'')}</span></td></tr>
+    <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">时间</td><td style="padding:6px 0">${esc(c.date)}${c.case_no ? ' · 文号：'+esc(c.case_no) : ''}</td></tr>
+    <tr><td style="padding:6px 12px 6px 0;color:var(--c-text2)">处罚结果</td><td style="padding:6px 0"><strong style="color:var(--c-red)">${esc(c.penalty||'—')}</strong></td></tr>
+  </table>`;
   if ((c.violations||[]).length) {
-    html += '<div class="detail-section"><h3>📋 违规事项</h3>';
     const realV = c.violations.filter(v => v.length > 15);
     for (let i = 0; i < realV.length; i++) {
       html += `<div style="margin:6px 0;padding:8px 12px;background:var(--c-bg);border-radius:4px;font-size:13px;line-height:1.6"><strong style="color:var(--c-accent)">${i+1}.</strong> ${esc(realV[i])}</div>`;
     }
-    html += '</div>';
   }
-  // Defense
   if ((c.defense||[]).length) {
-    html += '<div class="detail-section"><h3>💬 申辩意见</h3><div class="detail-warning" style="background:#f0f4ff;color:var(--c-accent)">当事人提出以下申辩意见</div>';
-    const realD = c.defense.filter(d => d.length > 15);
-    for (let i = 0; i < realD.length; i++) {
-      html += `<div style="margin:6px 0;padding:8px 12px;background:#fafbff;border:1px solid #e0e5f0;border-radius:4px;font-size:13px;line-height:1.6"><strong style="color:#6b7db3">申辩${i+1}.</strong> ${esc(realD[i])}</div>`;
-    }
+    html += '<div style="margin:8px 0 0;font-size:13px;color:var(--c-text2)"><strong>申辩意见：</strong>';
+    html += c.defense.filter(d => d.length > 15).map(d => esc(d)).join('；');
     html += '</div>';
   }
+  html += '</div>';
 
-  // Tags (两级分类)
+  // ===== ② 分析 =====
+  html += '<div class="detail-section"><h3>🔍 分析</h3>';
+  html += `<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">业务环节</span><span class="badge" style="background:var(--c-accent);color:#fff">${esc(c.business_stage||'—')}</span> <span style="color:var(--c-text2);font-size:13px;margin:0 6px">处罚类型</span><span class="badge" style="background:${isXzcf?'var(--c-red)':'var(--c-accent-light)'};color:${isXzcf?'#fff':'var(--c-accent)'}">${esc(c.penalty_type||'监管措施')}</span></div>`;
   if ((c.tags||[]).length) {
-    html += '<div class="detail-section"><h3>🏷️ 违规分类</h3><div style="display:flex;flex-wrap:wrap;gap:4px">';
-    // Group by L1
     const byL1 = {};
     for (const tag of (c.tags||[])) {
       const [l1, l2] = tag.split('/');
       if (!byL1[l1]) byL1[l1] = [];
       byL1[l1].push(l2);
     }
+    html += '<div style="font-size:13px"><span style="color:var(--c-text2);margin-right:6px">风险主题</span>';
     for (const [l1, l2s] of Object.entries(byL1)) {
       html += `<div style="margin:4px 0"><span class="badge" style="background:var(--c-accent);color:#fff;font-size:12px;margin-right:4px">${esc(l1)}</span>${l2s.map(l2 => `<span class="badge" style="background:var(--c-accent-light);color:var(--c-accent);font-size:11px">${esc(l2)}</span>`).join(' ')}</div>`;
     }
-    html += '</div></div>';
+    html += '</div>';
   }
+  html += '</div>';
 
-  // Laws violated
-  if (c.laws.length) {
-    html += '<div class="detail-section"><h3>📖 违反规定</h3><div style="display:flex;flex-wrap:wrap;gap:6px">';
-    for (const l of c.laws.slice(0,20)) {
-      html += `<span class="badge" style="background:#f0f4ff;color:var(--c-accent);font-size:12px;border:1px solid #d0daf0">${esc(l)}</span>`;
-    }
-    html += '</div></div>';
+  // ===== ③ 来源 =====
+  html += '<div class="detail-section"><h3>📖 来源</h3>';
+  if ((c.laws||[]).length) {
+    html += '<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">违反规定</span>';
+    html += c.laws.slice(0,20).map(l => `<span class="badge" style="background:#f0f4ff;color:var(--c-accent);font-size:12px;border:1px solid #d0daf0;margin:2px">${esc(l)}</span>`).join('');
+    html += '</div>';
   }
-
-  // OCR full text
-  html += `<div class="detail-section"><h3>📄 OCR 全文</h3><div class="detail-text">${htm(fullText, caseState.query)}</div></div>`;
-  html += `<div style="margin-top:12px;font-size:12px;color:var(--c-text3)">📎 <a href="${esc(c.source_url)}" target="_blank" rel="noopener">查看PDF原文</a></div>`;
+  html += `<div style="margin-bottom:8px;font-size:13px">📎 <a href="${esc(c.source_url)}" target="_blank" rel="noopener">查看原文</a> <span style="color:var(--c-text3);margin-left:6px">${esc(shortSrc(c.source||''))}</span></div>`;
+  html += `<details style="font-size:13px"><summary style="cursor:pointer;color:var(--c-accent)">展开原文全文</summary><div class="detail-text" style="margin-top:8px">${htm(fullText, caseState.query)}</div></details>`;
+  html += '</div>';
 
   detail.innerHTML = html;
   detail.querySelector('.detail-back').addEventListener('click', () => { detail.classList.remove('active'); detail.innerHTML=''; list.style.display=''; caseState.expandedId=null; });
+  const dfb = detail.querySelector('.fav-btn');
+  if (dfb) dfb.addEventListener('click', (e) => { e.stopPropagation(); toggleFav(c.id); dfb.textContent = isFav(c.id) ? '⭐' : '☆'; });
   $('#content-cases').scrollTop = 0;
 }
 
@@ -530,6 +571,58 @@ function bindCaseEvents() {
   const si = $('#search-input-cases'), sc = $('#search-clear-cases'); let timer;
   si.addEventListener('input', () => { caseState.query = si.value; clearTimeout(timer); timer = setTimeout(() => { doCaseSearch(); if (caseState.expandedId) { const dc=$('#content-cases .detail-container'); if(dc){dc.classList.remove('active');dc.innerHTML='';} const lc=$('#content-cases .list-container'); if(lc)lc.style.display=''; caseState.expandedId=null; } }, 250); sc.classList.toggle('visible', caseState.query.length > 0); });
   sc.addEventListener('click', () => { si.value=''; caseState.query=''; sc.classList.remove('visible'); doCaseSearch(); si.focus(); });
+}
+
+function switchModule(mod) {
+  currentModule = mod;
+  $$('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.module === mod));
+  $$('.module').forEach(m => m.classList.toggle('active', m.id === `module-${mod}`));
+}
+
+function renderTopics() {
+  const content = $('#content-topics');
+  const counts = {};
+  for (const c of caseState.cases) for (const t of (c.tags||[])) counts[t] = (counts[t]||0) + 1;
+  let html = '';
+  for (const l1 of L1_CATS) {
+    const subs = (L2_LABELS[l1]||[]).filter(l2 => counts[l1+'/'+l2]);
+    if (!subs.length) continue;
+    html += `<div style="margin-bottom:22px"><h3 style="font-size:15px;font-weight:700;margin:0 0 10px;color:var(--c-accent)">${esc(l1)}</h3><div style="display:flex;flex-wrap:wrap;gap:8px">`;
+    for (const l2 of subs) {
+      const tag = l1+'/'+l2;
+      html += `<button class="topic-chip" data-tag="${esc(tag)}" style="padding:7px 14px;border:1px solid var(--c-border);border-radius:18px;background:var(--c-surface);cursor:pointer;font-size:13px;color:var(--c-text)">${esc(l2)} <span style="color:var(--c-text3);font-size:12px">${counts[tag]}</span></button>`;
+    }
+    html += '</div></div>';
+  }
+  content.innerHTML = html || '<div class="empty-state"><h3>暂无数据</h3></div>';
+  content.querySelectorAll('.topic-chip').forEach(chip => chip.addEventListener('click', () => {
+    caseState.activeTags = [chip.dataset.tag];
+    switchModule('cases'); doCaseSearch(); renderCaseFilterBar();
+  }));
+}
+
+function renderFavs() {
+  const content = $('#content-favs');
+  const favs = caseState.cases.filter(c => caseState.favs.includes(c.id));
+  if (!favs.length) {
+    content.innerHTML = '<div class="empty-state"><div class="icon" style="font-size:40px">⭐</div><h3>还没有收藏案例</h3><div>在案例列表或详情页点 ☆ 即可加入收藏</div></div>';
+    return;
+  }
+  content.innerHTML = '';
+  const list = document.createElement('div'); list.className = 'list-container case-list'; content.appendChild(list);
+  for (const c of favs) {
+    const row = document.createElement('div'); row.className = 'case-row';
+    const pt = c.party_type || '';
+    const ptBadge = pt ? `<span class="pt-badge pt-${pt}">${esc(pt)}</span>` : '';
+    const xzcfBadge = c.penalty_type === '行政处罚' ? `<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>` : '';
+    const tags = (c.tags||[]).slice(0,4).map(t => `<span class="tg">${esc(t.split('/').pop())}</span>`).join('');
+    const meta = [shortSrc(c.source), c.date, c.case_no].filter(Boolean).join(' · ');
+    row.innerHTML = `<span class="fav-btn" data-fav="${c.id}" title="取消收藏">⭐</span>${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${xzcfBadge}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty,50))}</span>` : ''}</div><div class="case-meta">${esc(meta)}</div></div>`;
+    row.addEventListener('click', () => { switchModule('cases'); setTimeout(() => showCaseDetail(c), 60); });
+    const fb = row.querySelector('.fav-btn');
+    fb.addEventListener('click', (e) => { e.stopPropagation(); toggleFav(c.id); renderFavs(); });
+    list.appendChild(row);
+  }
 }
 
 // Init
