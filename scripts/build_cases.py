@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """案例库构建脚本（三局证监局）
-把 zj-csrc-data 下三局（浙江/北京/上海）的 fund_cases.json 富化成案例库数据，
+把 fundcase-crawler 下三局（浙江/北京/上海）的 fund_cases.json 富化成案例库数据，
 合并进 cn-law-hub/docs/data/，并派生前端用的 cases.json / cases_full.json。
 
 数据流：
@@ -22,9 +22,10 @@ import json
 import re
 import os
 
-# ============ 路径 ============
-ZJ_BASE = '/Users/yan/Desktop/for_claude/workspace/zj-csrc-data'
-OUT_BASE = '/Users/yan/Desktop/for_claude/workspace/fundcasehub/docs/data'
+# ============ 路径（相对脚本位置，避免硬编码父目录名）============
+HERE = os.path.dirname(os.path.abspath(__file__))  # fundcasehub/scripts/
+ZJ_BASE = os.path.join(HERE, '..', '..', 'fundcase-crawler')
+OUT_BASE = os.path.join(HERE, '..', 'docs', 'data')
 
 BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局', '湖南证监局', '厦门证监局', '安徽证监局', '河南证监局', '天津证监局', '重庆证监局', '吉林证监局', '海南证监局', '宁波证监局', '新疆证监局', '陕西证监局', '贵州证监局', '黑龙江证监局', '青岛证监局', '河北证监局', '山西证监局', '广西证监局', '大连证监局', '江西证监局', '辽宁证监局', '西藏证监局', '内蒙古证监局', '甘肃证监局', '云南证监局', '宁夏证监局', '青海证监局']
 DATA_DIRS = {
@@ -127,7 +128,7 @@ def classify_tags(text, violations_text=""):
 def strip_metadata(text):
     """剥离证监局详情页正文里的元数据区（索引号/分类/发布机构/发文日期/名称/文号/主题词）。
 
-    与 zj-csrc-data/*_csrc_monitor.py 里的 _strip_metadata 逻辑一致。
+    与 fundcase-crawler/*_csrc_monitor.py 里的 _strip_metadata 逻辑一致。
     """
     if not text:
         return ''
