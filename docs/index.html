@@ -488,8 +488,8 @@ function doCaseSearch() {
   if (caseState.activeTags.length) results = results.filter(c => (c.tags||[]).some(t => caseState.activeTags.includes(t)));
   // 处罚类型（监管措施/行政处罚）
   if (caseState.activePenaltyType !== 'all') results = results.filter(c => (c.penalty_type || '监管措施') === caseState.activePenaltyType);
-  // 业务环节
-  if (caseState.activeBusinessStage !== 'all') results = results.filter(c => (c.business_stage || '') === caseState.activeBusinessStage);
+  // 业务环节（多标签，命中任一即匹配）
+  if (caseState.activeBusinessStage !== 'all') results = results.filter(c => (c.business_stage || []).includes(caseState.activeBusinessStage));
   // 当事人类型
   if (caseState.activePartyType !== 'all') results = results.filter(c => c.party_type === caseState.activePartyType);
   // 来源机构（多选，满足任一）
@@ -555,7 +555,7 @@ function showCaseDetail(c) {
 
   // ===== ② 分析 =====
   html += '<div class="detail-section"><h3>🔍 分析</h3>';
-  html += `<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">业务环节</span><span class="badge" style="background:var(--c-accent);color:#fff">${esc(c.business_stage||'—')}</span> <span style="color:var(--c-text2);font-size:13px;margin:0 6px">处罚类型</span><span class="badge" style="background:${isXzcf?'var(--c-red)':'var(--c-accent-light)'};color:${isXzcf?'#fff':'var(--c-accent)'}">${esc(c.penalty_type||'监管措施')}</span></div>`;
+  html += `<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">业务环节</span>${(c.business_stage||[]).map(s => `<span class="badge" style="background:var(--c-accent);color:#fff;margin-right:4px">${esc(s)}</span>`).join('') || '—'} <span style="color:var(--c-text2);font-size:13px;margin:0 6px">处罚类型</span><span class="badge" style="background:${isXzcf?'var(--c-red)':'var(--c-accent-light)'};color:${isXzcf?'#fff':'var(--c-accent)'}">${esc(c.penalty_type||'监管措施')}</span></div>`;
   if ((c.tags||[]).length) {
     const byL1 = {};
     for (const tag of (c.tags||[])) {
