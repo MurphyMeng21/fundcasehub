@@ -316,6 +316,7 @@ def main():
             'source_url': c.get('source_url', ''),
             'penalty_type': c.get('penalty_type', '监管措施'),
             'business_stage': c.get('business_stage', ''),
+            'added_date': c.get('added_date', c.get('date', '')),
         })
         full[cid] = c.get('content_text', '')
 

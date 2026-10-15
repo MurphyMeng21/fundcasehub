@@ -172,8 +172,9 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
       <h1 style="font-size:26px;font-weight:700;color:var(--c-navy);margin:0 0 8px">私募基金案例库</h1>
       <div style="font-size:14px;color:var(--c-text2);margin:0 0 36px">从风险问题出发，检索案例、核对来源</div>
       <div style="width:100%;max-width:560px;position:relative;margin-bottom:16px">
-        <input type="text" id="search-input-home" placeholder="搜索案例标题、风险主题或案例编号" style="width:100%;height:48px;padding:0 44px 0 18px;border:1px solid var(--c-border);border-radius:24px;font-size:15px;outline:none;background:var(--c-surface);box-shadow:var(--shadow)">
-        <button class="search-clear" id="search-clear-home" style="right:16px">✕</button>
+        <input type="text" id="search-input-home" placeholder="搜索案例标题、风险主题或案例编号" style="width:100%;height:48px;padding:0 92px 0 18px;border:1px solid var(--c-border);border-radius:24px;font-size:15px;outline:none;background:var(--c-surface);box-shadow:var(--shadow)">
+        <button class="search-clear" id="search-clear-home" style="right:52px">✕</button>
+        <button id="search-btn-home" style="position:absolute;right:6px;top:6px;width:36px;height:36px;border:none;border-radius:50%;background:var(--c-accent);color:#fff;font-size:16px;cursor:pointer">🔍</button>
       </div>
       <div style="font-size:13px;color:var(--c-text2);margin:0 0 40px">共 <strong id="home-count" style="color:var(--c-accent)">0</strong> 条案例 · 更新至 <span id="home-updated">—</span></div>
       <div style="width:100%;max-width:720px">
@@ -648,9 +649,9 @@ function renderFavs() {
 
 function renderHome() {
   $('#home-count').textContent = caseState.cases.length;
-  const dates = caseState.cases.map(c => c.date).filter(Boolean).sort();
+  const dates = caseState.cases.map(c => c.added_date || c.date).filter(Boolean).sort();
   $('#home-updated').textContent = dates.length ? dates[dates.length - 1] : '—';
-  const recent = [...caseState.cases].filter(c => c.date).sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 8);
+  const recent = [...caseState.cases].filter(c => c.added_date || c.date).sort((a, b) => (b.added_date || b.date || '').localeCompare(a.added_date || a.date || '')).slice(0, 10);
   const list = $('#home-recent-list');
   list.innerHTML = recent.map(c => {
     const xzcf = c.penalty_type === '行政处罚' ? '<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>' : '';
@@ -670,15 +671,19 @@ function switchToResults() {
   const rv = $('#results-view'); if (rv) rv.style.display = 'flex';
 }
 
+function doHomeSearch() {
+  const homeInput = $('#search-input-home');
+  switchToResults();
+  caseState.query = homeInput.value;
+  const si = $('#search-input-cases'); if (si) si.value = homeInput.value;
+  doCaseSearch();
+}
+
 function bindHomeSearch() {
-  const homeInput = $('#search-input-home'), homeClear = $('#search-clear-home');
+  const homeInput = $('#search-input-home'), homeClear = $('#search-clear-home'), homeBtn = $('#search-btn-home');
   if (!homeInput) return;
-  homeInput.addEventListener('input', () => {
-    switchToResults();
-    caseState.query = homeInput.value;
-    const si = $('#search-input-cases'); if (si) si.value = homeInput.value;
-    doCaseSearch();
-  });
+  homeInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') doHomeSearch(); });
+  if (homeBtn) homeBtn.addEventListener('click', doHomeSearch);
   homeClear.addEventListener('click', () => { homeInput.value = ''; caseState.query = ''; const si = $('#search-input-cases'); if (si) si.value = ''; doCaseSearch(); homeInput.focus(); });
 }
 
