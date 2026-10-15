@@ -344,7 +344,7 @@ function renderCaseFilterBar() {
   }
   h += '</div>';
   h += '<span class="filter-label">业务环节</span><div class="segmented">';
-  for (const bs of ['all','募集推介','投资运作','存续管理','机构治理']) {
+  for (const bs of ['all','募集推介','投资运作','存续管理','登记备案','机构治理']) {
     const label = bs === 'all' ? '全部' : bs;
     h += `<button class="${caseState.activeBusinessStage===bs?'active':''}" data-stage="${bs}">${label}</button>`;
   }
