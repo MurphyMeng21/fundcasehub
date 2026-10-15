@@ -8,14 +8,15 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --c-bg:#f8f9fb;--c-surface:#fff;--c-border:#e2e5ea;--c-text:#1a1f2e;
-  --c-text2:#5f6b7a;--c-text3:#8e99a8;--c-accent:#1a56db;--c-accent-light:#e8effc;
+  --c-bg:#f2f5f7;--c-surface:#fff;--c-border:#dde5ea;--c-text:#142c40;
+  --c-text2:#617583;--c-text3:#849eaf;--c-accent:#007e7c;--c-accent-light:#e8f4f2;
+  --c-navy:#142c40;--c-navy2:#213b4b;
   --c-green:#0d7d4a;--c-green-bg:#e6f4ed;--c-orange:#b85c00;--c-orange-bg:#fef3e5;
   --c-red:#c02020;--c-red-bg:#fce4e4;--c-yellow:#856404;--c-yellow-bg:#fff8e1;
   --sidebar-w:280px;--header-h:56px;--tab-h:44px;--radius:8px;--shadow:0 1px 3px rgba(0,0,0,.08);
   --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 }
-body{font-family:var(--font);background:var(--c-bg);color:var(--c-text);line-height:1.6}#app{min-height:100vh;display:flex;flex-direction:column}
+body{font-family:var(--font);background:var(--c-bg);color:var(--c-text);line-height:1.6}#app{min-height:100vh;display:flex;flex-direction:row}
 a{color:var(--c-accent);text-decoration:none}
 button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 input,select{font:inherit}
@@ -24,10 +25,10 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 .sev-严重{background:var(--c-red-bg);color:var(--c-red)}.sev-较重{background:var(--c-orange-bg);color:var(--c-orange)}
 .sev-一般{background:var(--c-yellow-bg);color:var(--c-yellow)}.sev-较轻{background:var(--c-green-bg);color:var(--c-green)}
 
-#tab-bar{display:flex;background:var(--c-surface);border-bottom:1px solid var(--c-border);height:var(--tab-h);flex-shrink:0;padding:0 16px;gap:0}
-.tab-btn{padding:0 24px;font-size:14px;font-weight:500;color:var(--c-text2);border-bottom:2px solid transparent;transition:all .2s;display:flex;align-items:center;gap:6px}
-.tab-btn:hover{color:var(--c-accent);background:var(--c-accent-light)}
-.tab-btn.active{color:var(--c-accent);border-bottom-color:var(--c-accent);font-weight:600}
+#tab-bar{display:flex;flex-direction:column;background:var(--c-navy);border-right:1px solid var(--c-navy2);width:210px;flex-shrink:0;padding:24px 0;gap:4px}
+.tab-btn{padding:11px 22px;font-size:14px;font-weight:500;color:#b9cad6;border-left:3px solid transparent;transition:all .2s;display:flex;align-items:center;gap:8px;text-align:left;width:100%;background:transparent}
+.tab-btn:hover{color:#fff;background:var(--c-navy2)}
+.tab-btn.active{color:#fff;border-left-color:var(--c-accent);background:var(--c-navy2);font-weight:600}
 
 .module{display:none;flex:1;flex-direction:column;overflow:visible}
 .module.active{display:flex}
@@ -158,6 +159,7 @@ mark.highlight{background:#fde68a;color:inherit;padding:0 2px;border-radius:2px}
 <body>
 <div id="app">
   <div id="tab-bar">
+    <div style="padding:0 22px 22px;color:#fff;font-size:16px;font-weight:700;line-height:1.4">私募基金<br>案例库</div>
     <button class="tab-btn active" data-module="cases">🔍 案例检索</button>
     <button class="tab-btn" data-module="topics">🗂️ 风险专题</button>
     <button class="tab-btn" data-module="favs">⭐ 我的收藏</button>
