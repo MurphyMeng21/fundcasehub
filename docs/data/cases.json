@@ -29,7 +29,10 @@
     "source": "新疆证监局",
     "source_url": "https://www.csrc.gov.cn/xinjiang/c104370/c7665691/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "投资运作",
+      "存续管理"
+    ],
     "added_date": "2026-10-19"
   },
   {
@@ -66,7 +69,10 @@
     "source": "新疆证监局",
     "source_url": "https://www.csrc.gov.cn/xinjiang/c104370/c7665687/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理",
+      "存续管理"
+    ],
     "added_date": "2026-10-19"
   },
   {
@@ -103,7 +109,9 @@
     "source": "新疆证监局",
     "source_url": "https://www.csrc.gov.cn/xinjiang/c104370/c7665671/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "登记备案"
+    ],
     "added_date": "2026-10-19"
   },
   {
@@ -509,7 +517,11 @@
     "source": "宁波证监局",
     "source_url": "https://www.csrc.gov.cn/ningbo/c104130/c7664831/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "募集推介",
+      "投资运作",
+      "登记备案"
+    ],
     "added_date": "2026-10-15"
   },
   {
@@ -545,7 +557,9 @@
     "source": "天津证监局",
     "source_url": "https://www.csrc.gov.cn/tianjin/c103610/c7665423/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-13"
   },
   {
@@ -583,7 +597,9 @@
     "source": "天津证监局",
     "source_url": "https://www.csrc.gov.cn/tianjin/c103610/c7665420/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-13"
   },
   {
@@ -614,7 +630,9 @@
     "source": "浙江证监局",
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103952/c7665106/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "投资运作"
+    ],
     "added_date": "2026-10-12"
   },
   {
@@ -648,7 +666,9 @@
     "source": "浙江证监局",
     "source_url": "https://www.csrc.gov.cn/zhejiang/c103952/c7665104/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-12"
   },
   {
@@ -682,7 +702,9 @@
     "source": "上海证监局",
     "source_url": "https://www.csrc.gov.cn/shanghai/c103864/c7664823/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-12"
   },
   {
@@ -710,7 +732,9 @@
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7664812/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-12"
   },
   {
@@ -1077,7 +1101,12 @@
     "source": "江苏证监局",
     "source_url": "https://www.csrc.gov.cn/jiangsu/c103894/c7665501/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "募集推介",
+      "投资运作",
+      "存续管理",
+      "登记备案"
+    ],
     "added_date": "2026-10-09"
   },
   {
@@ -1361,7 +1390,9 @@
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7665234/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "存续管理"
+    ],
     "added_date": "2026-10-08"
   },
   {
@@ -1390,7 +1421,9 @@
     "source": "北京证监局",
     "source_url": "https://www.csrc.gov.cn/beijing/c105547/c7665221/content.shtml",
     "penalty_type": "监管措施",
-    "business_stage": "",
+    "business_stage": [
+      "机构治理"
+    ],
     "added_date": "2026-10-08"
   },
   {
