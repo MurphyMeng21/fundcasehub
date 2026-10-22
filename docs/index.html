@@ -338,7 +338,7 @@ function renderCaseFilterBar() {
   // 行2：处罚类型 + 当事人类型 + 来源机构 + 处分级别
   h += '<div class="filter-row">';
   h += '<span class="filter-label">处罚类型</span><div class="segmented">';
-  for (const pt of ['all','监管措施','行政处罚']) {
+  for (const pt of ['all','监管措施','行政处罚','纪律处分']) {
     const label = pt === 'all' ? '全部' : pt;
     h += `<button class="${caseState.activePenaltyType===pt?'active':''}" data-penalty="${pt}">${label}</button>`;
   }
@@ -502,6 +502,22 @@ function doCaseSearch() {
   const rc = $('#filter-rows .result-count strong'); if (rc) rc.textContent = results.length;
 }
 
+// 处罚类型角标配色（行政处罚=红 / 纪律处分=深蓝 / 监管措施=浅青）
+const PT_STYLES = {
+  '行政处罚': 'background:var(--c-red);color:#fff',
+  '纪律处分': 'background:#142c40;color:#fff',
+  '监管措施': 'background:var(--c-accent-light);color:var(--c-accent)',
+};
+function penaltyBadge(pt) {
+  const p = pt || '监管措施';
+  return `<span class="badge" style="${PT_STYLES[p] || PT_STYLES['监管措施']}">${esc(p)}</span>`;
+}
+// 列表行角标：监管措施不显示（避免刷屏），其余显示小号角标
+function penaltyListBadge(pt) {
+  if (!pt || pt === '监管措施') return '';
+  return `<span class="badge" style="${PT_STYLES[pt] || PT_STYLES['监管措施']};font-size:10px;margin-left:6px">${esc(pt)}</span>`;
+}
+
 function renderCaseList(cases) {
   const content = $('#content-cases'); content.innerHTML = '';
   if (!cases.length) { content.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><h3>未找到匹配的案例</h3><div>请调整或清空筛选条件</div></div>'; return; }
@@ -512,7 +528,7 @@ function renderCaseList(cases) {
     const pt = c.party_type || '';
     const ptBadge = pt ? `<span class="pt-badge pt-${pt}">${esc(pt)}</span>` : '';
     const pos = c.position ? `<span class="pos">${esc(c.position)}</span>` : '';
-    const xzcfBadge = c.penalty_type === '行政处罚' ? `<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>` : '';
+    const xzcfBadge = penaltyListBadge(c.penalty_type);
     const tags = (c.tags||[]).slice(0,4).map(tag => `<span class="tg">${esc(tag.split('/').pop())}</span>`).join('');
     const sevBadge = c.severity ? `<span class="badge sev-${c.severity}" style="font-size:11px">${esc(c.severity)}</span>` : '';
     const meta = [shortSrc(c.source), c.date, c.case_no].filter(Boolean).join(' · ');
@@ -528,7 +544,6 @@ function showCaseDetail(c) {
   const list = $('#content-cases .list-container'), detail = $('#content-cases .detail-container');
   list.style.display = 'none'; detail.classList.add('active'); detail.innerHTML = ''; caseState.expandedId = c.id;
   const fullText = caseState.fullTexts[c.id] || '';
-  const isXzcf = c.penalty_type === '行政处罚';
   let html = `<button class="detail-back">← 返回列表</button>
     <div class="detail-title">${esc(c.party||c.name)}${c.position ? `<span class="badge" style="background:#f0f0f0;color:#666;font-size:12px;margin-left:8px">${esc(c.position)}</span>` : ''} <span class="fav-btn" data-fav="${c.id}" style="cursor:pointer;font-size:16px">${isFav(c.id) ? '⭐' : '☆'}</span></div>`;
 
@@ -555,7 +570,7 @@ function showCaseDetail(c) {
 
   // ===== ② 分析 =====
   html += '<div class="detail-section"><h3>🔍 分析</h3>';
-  html += `<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">业务环节</span>${(c.business_stage||[]).map(s => `<span class="badge" style="background:var(--c-accent);color:#fff;margin-right:4px">${esc(s)}</span>`).join('') || '—'} <span style="color:var(--c-text2);font-size:13px;margin:0 6px">处罚类型</span><span class="badge" style="background:${isXzcf?'var(--c-red)':'var(--c-accent-light)'};color:${isXzcf?'#fff':'var(--c-accent)'}">${esc(c.penalty_type||'监管措施')}</span></div>`;
+  html += `<div style="margin-bottom:8px"><span style="color:var(--c-text2);font-size:13px;margin-right:6px">业务环节</span>${(c.business_stage||[]).map(s => `<span class="badge" style="background:var(--c-accent);color:#fff;margin-right:4px">${esc(s)}</span>`).join('') || '—'} <span style="color:var(--c-text2);font-size:13px;margin:0 6px">处罚类型</span>${penaltyBadge(c.penalty_type)}</div>`;
   if ((c.tags||[]).length) {
     const byL1 = {};
     for (const tag of (c.tags||[])) {
@@ -636,7 +651,7 @@ function renderFavs() {
     const row = document.createElement('div'); row.className = 'case-row';
     const pt = c.party_type || '';
     const ptBadge = pt ? `<span class="pt-badge pt-${pt}">${esc(pt)}</span>` : '';
-    const xzcfBadge = c.penalty_type === '行政处罚' ? `<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>` : '';
+    const xzcfBadge = penaltyListBadge(c.penalty_type);
     const tags = (c.tags||[]).slice(0,4).map(t => `<span class="tg">${esc(t.split('/').pop())}</span>`).join('');
     const meta = [shortSrc(c.source), c.date, c.case_no].filter(Boolean).join(' · ');
     row.innerHTML = `<span class="fav-btn" data-fav="${c.id}" title="取消收藏">⭐</span>${ptBadge}<div class="case-main"><div class="case-title">${esc(c.party||c.name)}${xzcfBadge}</div><div class="case-sub">${tags}${c.penalty ? `<span class="pen">${esc(trunc(c.penalty,50))}</span>` : ''}</div><div class="case-meta">${esc(meta)}</div></div>`;
@@ -654,7 +669,7 @@ function renderHome() {
   const recent = [...caseState.cases].filter(c => c.added_date || c.date).sort((a, b) => (b.added_date || b.date || '').localeCompare(a.added_date || a.date || '')).slice(0, 10);
   const list = $('#home-recent-list');
   list.innerHTML = recent.map(c => {
-    const xzcf = c.penalty_type === '行政处罚' ? '<span class="badge" style="background:var(--c-red);color:#fff;font-size:10px;margin-left:6px">行政处罚</span>' : '';
+    const xzcf = penaltyListBadge(c.penalty_type);
     return `<div class="home-recent-item" data-id="${c.id}" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--c-border);cursor:pointer">
       <div style="flex:1;min-width:0"><div style="font-size:14px;font-weight:500;color:var(--c-text)">${esc(c.party || c.name)}${xzcf}</div><div style="font-size:12px;color:var(--c-text3);margin-top:2px">${esc(shortSrc(c.source))} · ${esc(c.date || '')}</div></div>
       <div style="font-size:12px;color:var(--c-accent);white-space:nowrap;margin-left:12px">${esc(c.penalty || '')}</div>

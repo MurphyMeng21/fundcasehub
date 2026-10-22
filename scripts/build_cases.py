@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""案例库构建脚本（三局证监局）
-把 fundcase-crawler 下三局（浙江/北京/上海）的 fund_cases.json 富化成案例库数据，
-合并进 cn-law-hub/docs/data/，并派生前端用的 cases.json / cases_full.json。
+"""案例库构建脚本（36 证监局 + 中基协 AMAC）
+把 fundcase-crawler 下 36 局的 fund_cases.json 与 amac_data/records.json（中基协纪律处分）
+富化成案例库数据，合并进 fundcasehub/docs/data/，并派生前端用的 cases.json / cases_full.json。
 
 数据流：
-  各局 records.json --filter_fund_cases--> fund_cases.json
-          --build_cases.py--> cases_all.json（权威全文，含 severity/tags）
+  各局 records.json --filter_fund_cases--> fund_cases.json ┐
+  amac_data/records.json（crawl_amac_cases.py 产出）      ┴─build_cases.py--> cases_all.json
                               ├─ cases.json（轻量，页面列表/检索用）
                               └─ cases_full.json（{case_id: 全文}，懒加载）
 
@@ -14,18 +14,27 @@
     python3 build_cases.py
 
 注意：
-  - 只重建三局证监局记录；中基协(AMAC)、交易所记录原样保留。
-  - 证监局行政监管措施的 severity 一律「一般 / 2」（历史 941 条验证一致）。
-  - tags 用 CAT_LEVELS 二级分类体系（6 一级 × 26 二级）按关键词匹配。
+  - 证监局记录按 source_url 去重后追加；中基协(AMAC)记录按 source_url(=pdf_url) 去重后追加，
+    交易所记录原样保留。
+  - 证监局行政监管措施的 severity 一律「一般 / 2」（历史验证一致）；
+    中基协 severity 按处分力度映射（见 AMAC_SEVERITY_RULES，从存量 357 条反推）。
+  - tags 用 CAT_LEVELS 二级分类体系（6 一级 × 26 二级）按关键词匹配；
+    business_stage 复用 fundcase-crawler/tag_business_stage.py 的 tag_stages。
 """
 import json
-import re
 import os
+import re
+import sys
 
 # ============ 路径（相对脚本位置，避免硬编码父目录名）============
 HERE = os.path.dirname(os.path.abspath(__file__))  # fundcasehub/scripts/
 ZJ_BASE = os.path.join(HERE, '..', '..', 'fundcase-crawler')
 OUT_BASE = os.path.join(HERE, '..', 'docs', 'data')
+sys.path.insert(0, ZJ_BASE)
+from tag_business_stage import tag_stages  # noqa: E402
+
+AMAC_RECORDS = os.path.join(ZJ_BASE, 'amac_data', 'records.json')
+AMAC_AGENCY = '中国证券投资基金业协会（中基协）'
 
 BUREAUS = ['浙江证监局', '北京证监局', '上海证监局', '深圳证监局', '江苏证监局', '广东证监局', '福建证监局', '四川证监局', '山东证监局', '湖北证监局', '湖南证监局', '厦门证监局', '安徽证监局', '河南证监局', '天津证监局', '重庆证监局', '吉林证监局', '海南证监局', '宁波证监局', '新疆证监局', '陕西证监局', '贵州证监局', '黑龙江证监局', '青岛证监局', '河北证监局', '山西证监局', '广西证监局', '大连证监局', '江西证监局', '辽宁证监局', '西藏证监局', '内蒙古证监局', '甘肃证监局', '云南证监局', '宁夏证监局', '青海证监局']
 DATA_DIRS = {
@@ -237,6 +246,61 @@ def fund_case_to_all(fc, agency):
         'source': agency,
         'source_url': fc.get('detail_url', ''),
         'penalty_type': fc.get('penalty_type', '监管措施'),
+        'business_stage': tag_stages(tags, violations),
+        'added_date': fc.get('date', ''),
+    }
+
+
+# ============ 中基协（AMAC）纪律处分 ============
+# 处分力度 → severity 映射（从存量 357 条反推，2026-10-23 校准：可判定条目吻合率 ~88%）。
+# 按「力度降序、先命中先用」；存量口径：撤销登记/暂停受理产品备案=严重，公开谴责/黑名单=较重，警告=一般。
+# 未命中（penalty 为空或 OCR 噪音）默认「较重」，提示人工关注。
+AMAC_SEVERITY_RULES = [
+    (4, '严重', ['撤销', '暂停受理', '暂停办理']),
+    (3, '较重', ['黑名单', '谴责', '公开批评', '暂停']),
+    (2, '一般', ['警告', '警示', '责令', '限期改正', '通报批评', '内部惩戒']),
+]
+
+
+def amac_severity(penalty_text):
+    """按处分措施文本映射 severity，返回 (score, 名称)。未命中 → (3, 较重)。"""
+    p = penalty_text or ''
+    for score, name, keywords in AMAC_SEVERITY_RULES:
+        if any(kw in p for kw in keywords):
+            return score, name
+    return 3, '较重'
+
+
+def amac_record_to_all(rec):
+    """一条 amac_data/records.json 记录 → cases_all.json 记录（中基协纪律处分）。"""
+    f = rec.get('fields', {}) or {}
+    content = format_amac_content(rec.get('ocr_text', '') or '')
+    violations = f.get('violations', []) or []
+    tags = classify_tags(content, ' '.join(violations))
+    sev_score, sev_name = amac_severity(f.get('penalty', ''))
+    date = rec.get('date', '') or f.get('date', '')
+    return {
+        'party': f.get('party', '') or rec.get('name', ''),
+        'party_type': '自然人' if rec.get('channel') == 'scfry' else '机构',
+        'position': '',
+        'agency': AMAC_AGENCY,
+        'date': date,
+        'case_no': f.get('case_no', ''),
+        'penalty': f.get('penalty', ''),
+        'severity': sev_name,
+        'severity_score': sev_score,
+        'tags': tags,
+        'categories': sorted(set(t.split('/')[0] for t in tags)),
+        'violations': violations,
+        'defense': f.get('defense', []) or [],
+        'laws': f.get('laws', []) or [],
+        'content_preview': content[:3000],
+        'content_text': content,
+        'source': '中基协',
+        'source_url': rec.get('pdf_url', ''),
+        'penalty_type': '纪律处分',
+        'business_stage': tag_stages(tags, violations),
+        'added_date': date,
     }
 
 
@@ -257,6 +321,9 @@ def main():
             ct = format_amac_content(x.get('content_text', '') or '')
             x['content_text'] = ct
             x['content_preview'] = ct[:3000]
+            # 存量口径修正：中基协做出的是「纪律处分」，不是证监局的「监管措施」（2026-10-23）
+            if x.get('penalty_type') != '纪律处分':
+                x['penalty_type'] = '纪律处分'
 
     # 1.7 证监局正文段落分层（对保留的历史数据也处理）
     for x in all_cases:
@@ -283,6 +350,28 @@ def main():
             new_count += 1
             added += 1
         print(f'{agency}: 新增 {new_count} 条')
+
+    # 2.5 中基协（AMAC）纪律处分：按 source_url(=pdf_url) 去重后追加
+    #     未 OCR 的记录（无 ocr_text）跳过，等 crawl_amac_cases.py 补齐后下次自动入库
+    if os.path.exists(AMAC_RECORDS):
+        with open(AMAC_RECORDS, encoding='utf-8') as f:
+            amac_records = json.load(f)
+        amac_new = 0
+        amac_skip_noocr = 0
+        for rec in amac_records:
+            if rec.get('source_url', rec.get('pdf_url', '')) in existing_urls:
+                continue
+            if not rec.get('ocr_text'):
+                amac_skip_noocr += 1
+                continue
+            all_cases.append(amac_record_to_all(rec))
+            existing_urls.add(rec.get('source_url', rec.get('pdf_url', '')))
+            amac_new += 1
+            added += 1
+        print(f'中基协（AMAC）: 新增 {amac_new} 条' +
+              (f'（另有 {amac_skip_noocr} 条待 OCR，暂不入库）' if amac_skip_noocr else ''))
+    else:
+        print(f'中基协（AMAC）: 未找到 {AMAC_RECORDS}，跳过')
 
     # 3. 按决定日期倒序
     all_cases.sort(key=lambda x: x.get('date', '') or '', reverse=True)
