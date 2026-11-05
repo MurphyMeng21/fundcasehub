@@ -288,7 +288,7 @@ async function loadCaseModule() {
     caseState.cases = await r1.json(); caseState.fullTexts = await r2.json(); caseState.filtered = [...caseState.cases];
     caseState.favs = loadFavs();
     caseState.fuse = new Fuse(caseState.cases, {
-      keys: [{name:'party',weight:0.3},{name:'content_preview',weight:0.3},{name:'tags',weight:0.2},{name:'case_no',weight:0.1},{name:'penalty',weight:0.1}],
+      keys: [{name:'party',weight:0.55},{name:'content_preview',weight:0.2},{name:'tags',weight:0.1},{name:'case_no',weight:0.1},{name:'penalty',weight:0.05}],
       threshold: 0.35, distance: 100, minMatchCharLength: 1, includeScore: true, includeMatches: true, ignoreLocation: true, ignoreFieldNorm: true
     });
     renderCaseFilterBar(); renderCaseList(caseState.cases); bindCaseEvents();
@@ -482,7 +482,16 @@ function renderTypePopover() {
 
 function doCaseSearch() {
   let results;
-  if (caseState.query.trim()) { const fr = caseState.fuse.search(caseState.query.trim()); results = fr.map(r => r.item); }
+  if (caseState.query.trim()) {
+    const q = caseState.query.trim().replace(/\s+/g,'');
+    const fr = caseState.fuse.search(q);
+    results = fr.map(r => r.item);
+    // 置顶层：当事人名精确包含完整搜索词的案例排最前（按日期倒序），其余保持模糊匹配顺序
+    const hits = [], rest = [];
+    for (const c of results) ((c.party || '').replace(/\s+/g,'').includes(q) ? hits : rest).push(c);
+    hits.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    results = [...hits, ...rest];
+  }
   else results = [...caseState.cases];
   // 违规类型（多选，满足任一）
   if (caseState.activeTags.length) results = results.filter(c => (c.tags||[]).some(t => caseState.activeTags.includes(t)));
