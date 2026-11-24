@@ -358,18 +358,24 @@ def main():
             amac_records = json.load(f)
         amac_new = 0
         amac_skip_noocr = 0
+        amac_skip_notice = 0
         for rec in amac_records:
             if rec.get('source_url', rec.get('pdf_url', '')) in existing_urls:
                 continue
             if not rec.get('ocr_text'):
                 amac_skip_noocr += 1
                 continue
+            # 「复核决定书送达公告」是程序性通知（对已公开决定的复核申请），不进案例库；
+            # 「决定书/事先告知书送达公告」是失联当事人的唯一公开处分记录，必须入库
+            if '复核决定书送达公告' in rec.get('title', ''):
+                amac_skip_notice += 1
+                continue
             all_cases.append(amac_record_to_all(rec))
             existing_urls.add(rec.get('source_url', rec.get('pdf_url', '')))
             amac_new += 1
             added += 1
         print(f'中基协（AMAC）: 新增 {amac_new} 条' +
-              (f'（另有 {amac_skip_noocr} 条待 OCR，暂不入库）' if amac_skip_noocr else ''))
+              (f'（另有 {amac_skip_noocr} 条待 OCR、{amac_skip_notice} 条送达公告不入库）' if amac_skip_noocr or amac_skip_notice else ''))
     else:
         print(f'中基协（AMAC）: 未找到 {AMAC_RECORDS}，跳过')
 
